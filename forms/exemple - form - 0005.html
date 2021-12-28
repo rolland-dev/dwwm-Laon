@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test de formulaire</title>
+</head>
+<body>
+    <h2>Merci d'entrer vos informations :</h2>
+    <form>
+<fieldset>
+    <legend>partie 1</legend>
+            <label for="nom">Nom:</label><br>
+            <input type="text" name ="nom" id="nom" placeholder="Votre nom "><br>
+    
+            <label for="prenom">Prenom:</label><br>
+            <input type="text" name ="prenom" id="prenom" placeholder="votre prenom"><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" name ="email" id="email" placeholder="votre email"><br>
+           
+</fieldset>
+        <label for="password">Mot de passe:</label><br>
+        <input type="password" name ="password" id="password" placeholder="votre mot de passe"><br>
+
+        <label>Sexe:</label>
+        <input type="radio" name ="sexe">Homme
+        <input type="radio" name ="sexe" checked>Femme<br>
+
+        <label>Vos passions :</label>
+        <label for="infos">Informatique:</label>
+        <input type="checkbox" name ="infos" id="infos">
+        <label for="maths">Mahématiques:</label>
+        <input type="checkbox" name ="maths" id="maths">
+        <br>
+
+        <label for="langue">Votre langue maternelle:</label>
+        <select name="langue" id="langue" multiple size="3">
+            <option value="fr">francais</option>
+            <option value="en">Anglais</option>
+            <option value="es" >Espagnol</option>
+        </select>
+    </form>
+</body>
+</html>
