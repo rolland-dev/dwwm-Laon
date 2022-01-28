@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce 3</title>
+</head>
+
+<body>
+    <script>
+        var message = "je suis %nom%, j'ai %age% et j'aime le %matiere%";
+        var from_json = [{
+            key: "%nom%",
+            value: "Anne-Do"
+        }, {
+            key: "%age%",
+            value: "24"
+        }, {
+            key: "%matiere%",
+            value: "HTML"
+        }];
+
+        // var res = from_json.reduce((acc, item) => acc.replace(item.key, item.value), message);
+
+        function funcDataFromJSon(acc, item) {
+            return acc.replace(item.key, item.value);
+        }
+        var res = from_json.reduce(funcDataFromJSon, message);
+
+        console.log(res);
+    </script>
+</body>
+
+</html>

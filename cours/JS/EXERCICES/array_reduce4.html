@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce 4</title>
+</head>
+
+<body>
+    <!-- 
+            On fait une répartition des candidats par age :
+            jeune  : 18 - 25 ans
+            moyens : 26 - 35 ans
+            vieux  : 36 - 55 ans
+         -->
+    <script>
+        var personnes = [{
+            nom: "Alain",
+            age: 30,
+            note: 14
+        }, {
+            nom: "Pierre",
+            age: 32,
+            note: 11
+        }, {
+            nom: "Christelle",
+            age: 21,
+            note: 13
+        }, {
+            nom: "Marc",
+            age: 25,
+            note: 5
+        }, {
+            nom: "Jean",
+            age: 20,
+            note: 6
+        }, {
+            nom: "Isabelle",
+            age: 55,
+            note: 12
+        }, {
+            nom: "James",
+            age: 31,
+            note: 7
+        }, {
+            nom: "David",
+            age: 43,
+            note: 8
+        }, {
+            nom: "Claude",
+            age: 41,
+            note: 11
+        }, {
+            nom: "Valerie",
+            age: 54,
+            note: 14
+        }, {
+            nom: "Francoise",
+            age: 30,
+            note: 16
+        }, {
+            nom: "Yohanne",
+            age: 19,
+            note: 9
+        }];
+
+
+        function bilanNotes(acc, item) {
+            let A = item.age;
+            let cat = (A >= 18 && A <= 25) ? "jeunes" : (A >= 26 && A <= 35) ? "moyens" : (A >= 36 && A <= 55) ? "vieux" : "INCONNUE";
+
+            if (!acc.candidats[cat]) {
+                acc.candidats[cat] = 0;
+                acc.ont_la_moyenne[cat] = 0;
+            }
+            acc.candidats[cat]++
+                if (item.note >= 10) acc.ont_la_moyenne[cat]++
+
+
+                    // if(age>=18 && age<= 25){
+                    //     if (!acc.candidats.jeunes) {
+                    //         acc.candidats.jeunes = 0;
+                    //         acc.ont_la_moyenne.jeunes = 0;
+                    //     }
+                    //     acc.candidats.jeunes++
+                    //     if (item.note>=10) acc.ont_la_moyenne.jeunes++
+                    // }else if (age>=26 && age<= 35){
+                    //     if (!acc.candidats.moyens) {
+                    //         acc.candidats.moyens = 0;
+                    //         acc.ont_la_moyenne.moyens = 0;
+                    //     }
+                    //     acc.candidats.moyens++;
+                    //     if (item.note>=10) acc.ont_la_moyenne.moyens++
+                    // }else if (age>=36 && age<= 55){
+                    //     if (!acc.candidats.vieux) {
+                    //         acc.candidats.vieux = 0;
+                    //         acc.ont_la_moyenne.vieux = 0;
+                    //     }
+                    //     acc.candidats.vieux++;
+                    //     if (item.note>=10) acc.ont_la_moyenne.vieux++
+                    // }
+                    return acc;
+
+        }
+        let initialisation = {
+            candidats: {},
+            ont_la_moyenne: {}
+        };
+        resultat = personnes.reduce(bilanNotes, initialisation);
+        console.log(resultat);
+
+        /*
+        {
+            candidats : {jeunes : 4, moyens : 4, vieux : 4},
+            ont_la_moyenne : {jeunes : 1, moyen : 3, vieux : 3}
+            
+        }
+        */
+    </script>
+</body>
+
+</html>

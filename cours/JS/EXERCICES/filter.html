@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var numbers = [1, 3, 6, 8, 11];
+
+        var lucky = numbers.filter(function(number) {
+        return number > 7;
+        });
+
+        document.write(lucky);
+
+
+
+     
+
+        var heroes = [
+            {name: "Batman", franchise: "DC"},
+            {name: "Ironman", franchise: "Marvel"},
+            {name: "Thor", franchise: "Marvel"},
+            {name: "Superman", franchise: "DC"}
+        ];
+
+        var marvelHeroes =  heroes.filter(function(hero) {
+            return hero.franchise == "Marvel";
+        });
+
+        console.log(marvelHeroes);
+
+    </script>
+</body>
+</html>

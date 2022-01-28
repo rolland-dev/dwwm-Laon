@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce 5</title>
+</head>
+
+<body>
+
+    <script>
+        G1 = [12, 14, 08, 11, 17];
+        G2 = [10, 15, 11, 14, 05];
+        G3 = [13, 12, 14, 16, 10];
+        G4 = [6, 19, 10, 19, 13];
+
+
+        // creer un tableau MoyMaxMin ( par Reduce )
+        /*
+         MoyMaxMin = []
+            {mg1 : moyenne du g1, max: note max, min : note min},  
+            {mg2 : moyenne du g2, max: note max, min : note min}, 
+            {mg3 : moyenne du g3, max: note max, min : note min}, 
+            {mg4 : moyenne du g4, max: note max, min : note min}  
+        ]
+        */
+        GT = [G1, G2, G3, G4]; // init l'ens des tableau dans GT
+
+        var resultat_1 = GT.reduce(F1, []); // création tableau avec ensemeble tab dans GT
+
+
+        function F1(acc, item) { // création de l'ojet
+            x = {
+                ["mg" + (acc.length + 1)]: item.reduce(moyenne, 0), // exé de la fct moyenne avec mg + acc(tab) + 1 car commence a 0
+                max: item.reduce(Max), // exé de la fct max
+                min: item.reduce(Min) // exé de la fct Min
+            };
+            acc.push(x) //met tout dans le tableau
+
+            return acc;
+
+        };
+
+        console.log(resultat_1);
+
+
+        function moyenne(acc, item) {
+
+            acc = acc + item / 5;
+            return acc;
+        }
+
+        function Min(acc, item) {
+            if (item < acc) {
+                acc = item;
+            }
+            return acc;
+        }
+
+        function Max(acc, item) {
+
+            if (item > acc) {
+                acc = item;
+            }
+            return acc;
+        }
+
+
+        // creer un tableau  MoyT  ( par Reduce & ...)
+        /*
+        MoyT = [ elements mg1, mg2, mg3e mg4 tries par ordre decroissant] 
+        */
+
+        var resultat_2 = GT.reduce(F2, []); // création tableau avec ensemeble tab dans GT
+
+        function F2(accT, item) {
+            Y = [
+                item.reduce(moyenne, 0)
+
+            ]
+            accT.push(Y) //met tout dans le tableau
+
+            accT.sort(MoyT); // classe par ordre décroissant
+
+            return accT;
+
+        };
+        console.log(resultat_2);
+
+        function MoyT(acc, item) {
+
+            return item - acc;
+
+        }
+
+
+        // creer une variable result MoyEcol  ( par Reduce )
+
+        /*
+        result = moyenne de tous les groupes
+        */
+        let result = 0;
+        var resultat_3 = GT.reduce(F3, []); // création tableau avec ensemeble tab dans GT
+
+        function F3(accTotal, item) {
+            Y = [
+                item.reduce(moyenne, 0),
+
+            ]
+            accTotal.push(Y) //met tout dans le tableau
+
+            // calcul la moyenne totale
+            result += Number(Y / 4);
+
+            // arrondi la valeur sur deux chiffre
+            var arrondi = result * 100;
+            arrondi = Math.round(arrondi);
+            arrondi = arrondi / 100;
+            result = arrondi;
+
+            return accTotal;
+
+        };
+        console.log("Moyeene Totale : " + (result));
+    </script>
+</body>
+
+</html>

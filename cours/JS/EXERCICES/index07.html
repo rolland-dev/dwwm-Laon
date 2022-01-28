@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Suite</title>
+    <style>
+      *,
+      html {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #main,
+      #resetting {
+        display: flex;
+        justify-content: center;
+      }
+      #main > p {
+        width: 480px;
+        height: 80px;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+      }
+      #resetting > button {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <p id="ip1">text 1<br /></p>
+      <p id="ip2">text 2<br /></p>
+      <p id="ip3">text 3<br /></p>
+      <p id="ip4">text 4<br /></p>
+      <p id="ip5">text 5<br /></p>
+      <p id="ip6">text 6<br /></p>
+    </div>
+
+    <div id="resetting"></div>
+
+    <script>
+      function colorVert(couleur) {
+        for (i = 1; i <= 6; i++) {
+          IDtext = "ip" + i;
+          let text = document.getElementById(IDtext);
+          text.style.backgroundColor = couleur;
+        }
+      }
+      colorVert("green");
+
+      function bouton() {
+        let newButton;
+        let newButton2;
+
+        for (i = 1; i <= 6; i++) {
+          IDtext = "ip" + i;
+          newButton = document.createElement("button");
+          newButton.textContent = "-R-";
+          document.getElementById(IDtext).appendChild(newButton);
+          newButton2 = document.createElement("button");
+          newButton2.textContent = "-B-";
+          document.getElementById(IDtext).appendChild(newButton2);
+          newButton.addEventListener("click", Red);
+          newButton2.addEventListener("click", Bleu);
+        }
+      }
+      bouton();
+
+      function Red() {
+        text = this.parentElement;
+        text.style.backgroundColor = "red";
+      }
+      function Bleu() {
+        text = this.parentElement;
+        text.style.backgroundColor = "blue";
+      }
+
+      function resetAll() {
+        var newReset = document.createElement("button");
+        newReset.id = "reset";
+        newReset.textContent = "Reset";
+        document.getElementById("resetting").appendChild(newReset);
+        document.getElementById("reset").onclick = function() {
+          colorVert("green");
+        };
+      }
+      resetAll();
+    </script>
+  </body>
+</html>

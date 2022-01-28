@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo class</title>
+</head>
+
+<body>
+    <h1>Titre principal</h1>
+
+    <p id='p1'></p>
+
+
+
+    <script>
+        class Voiture {
+            /*Nous n'avons pas besoin de préciser "function" 
+            devant notre constructeur
+            et nos autres méthodes classe*/
+            constructor(marque, modele, annee) {
+                this.marque = marque;
+                this.modele = modele;
+                this.annee = annee;
+            }
+
+            afficheP() {
+                document.getElementById('p1').innerHTML +=
+                    'Marque  ' + this.marque + ' : ' + this.modele + ' : ' + this.annee + ' : ' + '<br>'
+            };
+        }
+
+
+        let voiture = new Voiture('Renault', 'clio', 1990);
+
+        voiture.afficheP();
+
+        class Autre extends Voiture {
+            constructor(marque, modele, annee, couleur, carburant) {
+                super(marque, modele, annee);
+                this.couleur = couleur;
+                this.carburant = carburant;
+            }
+
+            afficheTout() {
+                document.getElementById('p1').innerHTML +=
+                    'Marque  ' + this.marque + ' : ' + this.modele + ' : ' + this.annee + ' : ' + this.couleur + ' : ' + this.carburant + '<br>'
+            };
+        }
+
+        let voitureplus = new Autre('Renault', 'clio', 1990, 'bleu', 'essence');
+        voitureplus.afficheTout();
+    </script>
+</body>
+
+</html>

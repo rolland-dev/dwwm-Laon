@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+</head>
+
+<body>
+    <script>
+        function myfiltre(a) {
+            return a.majeur;
+        }
+
+        let ar1 = [{
+            nom: 'paul',
+            majeur: true
+        }, {
+            nom: 'marc',
+            majeur: false
+        }, {
+            nom: 'victoria',
+            majeur: true
+        }, {
+            nom: 'pierre',
+            majeur: false
+        }, {
+            nom: 'anna',
+            majeur: true
+        }, ];
+        console.log(ar1);
+
+        let ar1_good = ar1.filter(myfiltre);
+        console.log(ar1_good);
+    </script>
+</body>
+
+</html>

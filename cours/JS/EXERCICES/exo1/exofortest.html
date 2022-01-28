@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="page">
+
+    </div>
+
+    <h1>bonjour</h1>
+
+
+   
+    <script>
+ 
+            let reponse = prompt("choisissez entre : bleu, rouge, 1, 2, q pour quitter");
+            reponse = reponse.toLowerCase();
+
+            console.log(reponse);
+
+            switch(reponse){
+                case 'bleu' :
+                    affichage("blue");
+                    break;
+                case 'rouge':
+                    affichage("red");
+                    break;
+                case '1':
+                    affichage("black");
+                    break;
+                case '2':
+                    affichage("yellow");
+                    break;
+                case 'q':
+                    alert("au revoir !!");
+                    break;
+                default:
+            }
+      
+
+            function affichage(couleur){
+                console.log(document.body.style.backgroundColor=couleur);
+            };
+    
+       
+    </script>
+    <script src=""></script>
+</body>
+</html>

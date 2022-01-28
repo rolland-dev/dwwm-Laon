@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        const monAge = 0;
+
+        // les tableaux
+        let tab = [5, 8, 45, 54];
+
+        tab.forEach(elts => {
+            document.write(elts + "<br>");
+        });
+
+        // les objets avec des propriètés
+        let obj = {
+            name: "didier",
+            prenom: "rolland",
+            age: "34"
+        };
+
+        for (elts in obj) {
+            document.write("elts : " + obj[elts] + "<br>");
+            document.write(obj.age + "<br>");
+        }
+    </script>
+</body>
+
+</html>

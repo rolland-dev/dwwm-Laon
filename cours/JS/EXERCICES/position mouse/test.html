@@ -1,0 +1,35 @@
+<!DOCTYPE>
+
+<html lang="fr">
+
+<head>
+    <title>test coordonnées</title>
+
+    <style>
+        #info {
+            background-color: #DDD;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        function souris(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            document.getElementById('coordonnes').value = 'X : ' + x + ', ' + 'Y : ' + y;
+            //Nouveau code :
+            var element = document.getElementById('info');
+            element.style.position = 'absolute';
+            element.style.left = x + 'px';
+            element.style.top = y + 'px';
+        }
+    </script>
+
+</head>
+
+<body onmousemove="souris(event);">
+    <div id="info">
+        <input type="text" id="coordonnes" value="inconnues" readonly="readonly" />
+    </div>
+</body>
+
+</html>

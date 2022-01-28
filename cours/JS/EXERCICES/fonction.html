@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        td {
+            padding: 10px;
+            background-color: blanchedalmond;
+            text-align: center;
+            border-radius: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Pythagore</h1>
+    <table id="tableau">
+        <!-- création tableau -->
+    </table>
+    <pre>
+    <script>
+        
+        // prend 2 param dont 1 chiffre 
+        // affichage d'un damier
+        function carre() {
+            var i, j=1,
+                k;
+                var tab = document.getElementById("tableau"); // création d'un pointeur sur tableau
+
+            document.write("<br/>");
+
+            for (i = 0; i <= 10; i++) {
+                var ligne=tab.insertRow(-1); // création d'une ligne
+                if (i == 0) {
+                    for (j = 0; j <= 10; j++) {
+                        ligne.style.color="blue";
+                        ligne.style.fontWeight="bold";
+                        var cellul = ligne.insertCell(-1); // insertion cellule
+                        cellul.innerHTML+= "<a href=\"\">" + j +"</a>";
+                    }
+                } else {
+
+                    var cellul = ligne.insertCell(-1);
+                        cellul.style.fontWeight="bold";
+                        cellul.style.color="blue";
+                        cellul.innerHTML+="<a href=\"\">" + i +"</a>";
+                        
+                    for (j = 1; j <= 10; j++) {
+                        var cellul = ligne.insertCell(-1);
+                        cellul.innerHTML+=j*i;
+                    }
+                }
+                document.write("<br/>");
+            }
+            document.getElementsByTagName("cellul").addEventListener("click",function(){
+            alert(document.getElementsByTagName('cellul').innerHTML);
+        });
+        }
+        
+        carre();
+        
+        
+
+    </script>
+
+</pre>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

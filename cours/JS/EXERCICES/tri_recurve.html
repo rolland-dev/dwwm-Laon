@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <title>tri recurcif</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        arr = [1, 6, 12, [5, 7, 8], 2, [1, 2, [1, 3], 5], 5];
+
+
+        // copie de tableau
+        function clone2(myArray) {
+
+            let newChose = [];
+            for (let k = 0; k < myArray.length; k++) {
+                console.log("longueur : " + myArray.length);
+                console.log("valeur k :" + k);
+                console.log("valeur  :" + myArray[k]);
+                for (var i = 0; i < myArray.length; i++) {
+                    console.log("valeur i :" + i);
+                    console.log("debut :" + myArray);
+                    newChose[k][i] = myArray; // si primitif
+
+                    if (typeof(myArray[k][i]) == "array") {
+                        //test si Array
+                        if (Array.isArray(myArray[k][i])) {
+                            newChose[k][i] = myArray[k][i].filter((a) => true);
+                            clone2(myArray[k][i]);
+                        } else if (Array.isArray(myArray[k + 1][i])) {
+                            k++;
+                            clone2(myArray[k][i]);
+                        }
+                        // test si object
+                        else if (typeof(myArray[k][i]) == "object") {
+                            newChose[k][i] = new myArray.constructor();
+                            newChose[k][i] = clone((myArray[k][i]));
+                            clone2(myArray[k][i]);
+                        } else if (!Array.isArray(myArray[k + 1][i])) {
+                            k++;
+                            clone2(myArray[k][i]);
+                        }
+                    }
+
+
+
+                }
+                return (newChose);
+            }
+        }
+        var copy_arr = clone2(arr);
+
+        console.log("COPY DU TABLEAU");
+        console.table(newChose);
+
+        console.log("TABLEAU ORIGINAL");
+        console.table(arr);
+
+        // arr[1][1] = "TEST";
+        // arr[1][2] = "TEST 2";
+
+        // console.log("COPY DU TABLEAU    APRES MODIF");
+        // console.table(copy_arr);
+
+        // console.log("TABLEAU ORIGINAL   APRES MODIF");
+        // console.table(arr);
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
