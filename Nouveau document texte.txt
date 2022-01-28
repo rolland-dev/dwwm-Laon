@@ -1,0 +1,4 @@
+> Faire une fonction avec 3 arguments
+> demandez d'entrer 2 chiffres et l'opérateur ( + - * ou / )
+> la fonction calculera en fonction de l'opérateur
+> ATTENTION à la division avec 0
