@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & family= Roboto:wght@700 & display=swap');
+
+/* famille de polices : 'Abril Fatface', cursive ;
+famille de polices : 'Roboto', sans empattement ; */
+
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & family= Roboto:wght@700 & display=swap');
+
+/* amille de polices : 'Abril Fatface', cursive ;
+font-family : 'Italianno', cursive ;
+famille de polices : 'Roboto', sans empattement ; */
+
+
+/* ---------------------------------------------------------------- */
+
+.cssete {
+    --bodybgc: radial-gradient(circle at 50.85% 49.69%, #ffc2b0 0, #ffb8b7 8.33%, #ffadbb 16.67%, #ffa2bd 25%, #ff97bb 33.33%, #ff8ab6 41.67%, #e77dac 50%, #b37396 58.33%, #ad6695 66.67%, #cc9bc3 75%, #d4a5d4 83.33%, #f6ffd0 91.67%, #9980af 100%);
+    --bodybgi: url(/assets/IMG/multicolored-paper-background.jpg);
+    --colormenu: #104b8d;
+}
+
+.csshiver {
+    --bodybgi: url(/assets/IMG/background-gc596eb029_1920.jpg);
+    --colormenu: radial-gradient(circle, rgb(224, 69, 69) 0%, rgba(128, 26, 38, 1) 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    /* background-color: rgb(212, 226, 16); */
+    /* background-image: var(--bodybgc); */
+    background-color: var(--bodybgc);
+    box-sizing: border-box;
+    position: relative;
+    background-image: var(--bodybgi);
+    background-size: cover;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                   LE MENU                                  */
+
+
+/* -------------------------------------------------------------------------- */
+
+.menu {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    font-size: 27px;
+    background: var(--colormenu);
+    color: rgb(238, 255, 5);
+    box-shadow: #4e4e4c80 15px 15px 15px;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+}
+
+div.menugauche {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menusticky {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    top: 10px;
+}
+
+.menugauche ul,
+.menusticky ul {
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+ul>button {
+    width: 41px;
+    height: 41px;
+    clip-path: circle();
+    /* background-color: rgb(9, 57, 129); */
+    background: var(--colormenu);
+    border: none;
+}
+
+ul>button>img {
+    width: 25px;
+    height: 25px;
+}
+
+ul>button>img:hover {
+    width: 50px;
+    height: 50px;
+}
+
+ul>button:hover {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                  SOUS MENU                                 */
+
+
+/* -------------------------------------------------------------------------- */
+
+.sousmenu {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: rgba(243, 160, 203, 0);
+    margin-top: 50px;
+}
+
+.sousmenu>div {
+    /* width: 70%; */
+    height: 600px;
+    /* background-color: aqua; */
+    /* border: solid 5px #F4FDB1; */
+    margin: 10px;
+    /* box-shadow: #3142df 10px 10px 0px; */
+}
+
+#imgsousmenu {
+    width: 60%;
+    background-image: url(/assets/IMG/aurora-g592c68bfe_640.jpg);
+    background-size: cover;
+    border: ridge 5px #F4FDB1;
+    box-shadow: #4e4e4c 15px 15px 15px;
+    /* background-image: url(/assets/IMG/polynesia-gb14dfa3b7_640.jpg); */
+}
+
+#imgsousmenu>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                 CONTAINER 1                                */
+
+
+/* -------------------------------------------------------------------------- */
+
+.container1 {
+    height: 250px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    background: var(--colormenu);
+    align-items: center;
+    box-shadow: #4e4e4c 15px 15px 15px;
+    border: ridge 5px #F4FDB1;
+}
+
+.bloctexte {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: auto;
+    background-color: #f7fae3;
+    border: solid 3px #F4FDB1;
+    padding: 50px;
+    font-size: 26px;
+    background-image: url(/assets/IMG/grunge-paper-background.jpg);
+    background-size: cover;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.divbloctexte {
+    width: 100%;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                               LA CALCULATRICE                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.calculatrice {
+    width: 40%;
+    background-color: rgb(37, 36, 37);
+    border: ridge 5px #F4FDB1;
+    box-shadow: #4e4e4c 15px 15px 10px;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#nombres {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+}
+
+#nombres>input:hover {
+    background-color: rgb(197, 255, 197);
+}
+
+#nombres>input {
+    width: 40%;
+    height: 70px;
+    border-radius: 10px;
+    border: solid 3px rgb(75, 78, 76);
+    font-size: 50px;
+    text-align: center;
+}
+
+fieldset {
+    width: 500px;
+    height: 90px;
+}
+
+#affichage {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+legend {
+    color: white;
+    font-size: 23px;
+}
+
+#totale {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(207, 255, 205);
+    border: solid 3px rgb(5, 235, 16);
+    font-size: 43px;
+    text-align: center;
+}
+
+#operateur1>button,
+#operateur2>button {
+    width: 177px;
+    height: 110px;
+    margin: 15px;
+    font-size: 33px;
+    border: solid 5px rgb(255, 129, 10);
+}
+
+#operateur1>button:hover,
+#operateur2>button:hover {
+    background-color: rgb(255, 206, 161);
+    color: rgb(5, 235, 16);
+    font-size: 50px;
+}
+
+#operateur1,
+#operateur2 {
+    /* margin-top: 20px; */
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                IMAGE CERCLE                                */
+
+
+/* -------------------------------------------------------------------------- */
+
+.imgcircle {
+    width: 100%;
+    height: 300px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgcircle>div {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-size: 350px 300px;
+    background-position: center;
+    border: solid 2px #F4FDB1;
+    box-shadow: #4e4e4c 15px 15px 15px;
+    margin: auto;
+}
+
+.imgcircle div:nth-child(1) {
+    background-image: url(/assets/IMG/kimono-g03b9db239_640.jpg);
+}
+
+.imgcircle div:nth-child(2) {
+    background-image: url(/assets/IMG/morocco-g9f4d3ea2a_640.jpg);
+}
+
+.imgcircle div:nth-child(3) {
+    background-image: url(/assets/IMG/outlook-gf4e85902e_640.jpg);
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                VIDEO YOUTUBE                               */
+
+
+/* -------------------------------------------------------------------------- */
+
+.containervideoyoutube {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoyoutube {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--colormenu);
+    /* margin-top: 150px; */
+    box-shadow: #4e4e4c 15px 15px 15px;
+    border: ridge 5px #F4FDB1;
+}
+
+iframe {
+    padding: 0%;
+    /* margin-top: 10px; */
+    /* margin-bottom: 100px; */
+    height: 400px;
+    width: 700px;
+    /* border: solid 5px black; */
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                              LES LIENS UTILES                              */
+
+
+/* -------------------------------------------------------------------------- */
+
+.liensutiles {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.liensutiles>a {
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    border: solid 5px #F4FDB1;
+    box-shadow: #4e4e4c 15px 15px 15px;
+}
+
+.liensutiles a:nth-child(1) {
+    background-image: url(/assets/IMG/mozilla-mdn5046.jpg);
+    background-position: 300px 200px;
+}
+
+.liensutiles a:nth-child(2) {
+    background-image: url(/assets/IMG/oopenclassroom.jpeg);
+}
+
+.liensutiles a:nth-child(3) {
+    background-image: url(/assets/IMG/google-logo.png);
+    background-position: 300px 190px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                                  LE FOOTER                                 */
+
+
+/* -------------------------------------------------------------------------- */
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: var(--colormenu);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #4e4e4c 0px -5px 10px;
+}
+
+.footer>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 19px;
+}
+
+.footer>p>span {
+    width: 19px;
+    height: 19px;
+    background-image: url(/assets/IMG/digital_copyright_icon_194730.png);
+    background-size: cover;
+    margin-left: 5px;
+}
