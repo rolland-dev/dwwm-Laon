@@ -1,0 +1,92 @@
+/* FICHIER STYLE CALCULATRICE & TABLES DE MULTIPLICATIONS */
+
+body {
+    margin: 25px;
+}
+
+table {
+    background-color: rgb(233, 211, 134);
+}
+
+
+/* mise en forme des touches et résultat */
+
+#case {
+    height: 37px;
+    width: 260px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.number {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    background-color: #5FAE5F;
+}
+
+.operator {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    background-color: #9FD29F;
+}
+
+.operator-spe {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(138, 212, 138);
+}
+
+
+/* mise en forme du survole des touches */
+
+.operator:hover,
+.operator-spe:hover {
+    background-color: #0C620C;
+}
+
+.number:hover {
+    background-color: #0C620C;
+}
+
+
+/* mise en forme de la zone résultat */
+
+#calc-output,
+#case {
+    background-color: rgb(119, 204, 119);
+    text-align: right;
+    border-radius: 13px;
+    font-size: larger;
+    padding: 8px;
+}
+
+
+/* mise en forme bouton multiplication */
+
+#nombre {
+    height: 50px;
+    width: 260px;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    background-color: #9FD29F;
+}
+
+
+/* mise ne forme zone des tables multiplications */
+
+.enform {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #9FD29F;
+    font-size: larger;
+}
