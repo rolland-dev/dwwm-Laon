@@ -1,0 +1,100 @@
+body
+{
+    width: 800px;
+    box-sizing: border-box;
+    background-color: rgb(204, 188, 172); /* couleur de fond de page */
+}
+
+.numero
+{
+    text-align: right; /* aligne texte à droite */
+}
+
+.formations, .connaissances, .passetemps
+{
+    border-style: double;               /* définition du rectangle */
+    border-color: rgb(202, 69, 45);   /* autour des LI */
+    margin: 10px 10px 10px 10px;        /* marge extérieur */
+    padding:20px;                       /* marge intérieur */
+    background-color: rgb(175, 114, 92);          /* couleur de fond pour chaque partie */
+    list-style: none;                   /* on supprime les puces */
+}
+
+
+.box
+{
+    display: flex;
+    flex-direction: row;    /* direction horizontale */
+}
+.image
+{
+    align-items: flex-end;  /* place image a drooite */
+}
+.nom
+{
+    flex: 1 1 auto;         /* position du nom et adesse */
+}
+
+h2, .nom
+{
+    padding: 0px 5px 5px 20px;  /* position du nom, adresse et titre paragraphes */
+}
+
+.trait  /* mise en place d'un trait */
+{
+    background-color: coral;
+    height: 2pt;
+    width: 100%;
+}
+.dwwm
+{
+    text-align: center;
+}
+
+.image img:hover 
+{
+    width:300px;
+    height:400px;
+}
+
+/* Info bulle */
+
+.infos
+{
+    width: 100px;
+    background-color: rgb(175, 173, 173);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bulle
+{
+    transform: scale(0) rotateY(-200deg);
+    position: absolute;
+    background-color: indianred;
+    color: lightblue;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 0px 0.5px rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(255, 255 , 255, 0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transition: 1s;
+}
+
+.bulle::before
+{
+    content: '';
+    position: absolute;
+    border-bottom-color: 8px solid rgb(204, 115, 115);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 10px;
+}
+.infos:hover > .bulle
+{
+    transform: scale(1) rotateX(0);
+}

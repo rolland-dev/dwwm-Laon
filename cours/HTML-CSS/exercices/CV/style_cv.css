@@ -1,0 +1,107 @@
+﻿body
+{
+    width: 800px;
+    box-sizing: border-box;
+    background-color: rgb(204, 188, 172); /* couleur de fond de page */
+}
+
+
+.formations, .connaissances, .passetemps
+{
+    
+    margin-top: 100px;
+    border-style: double;               /* définition du rectangle */
+    border-color: rgb(202, 69, 45);   /* autour des LI */
+    margin: 10px 10px 10px 10px;        /* marge extérieur */
+    padding:20px;                       /* marge intérieur */
+    background-color: rgb(175, 114, 92);          /* colour fond cadre */
+    list-style: none;   
+    
+}
+
+h2
+{
+    padding: 0px 5px 5px 20px;  /* position du nom, adresse et titre paragraphes */
+}
+
+.trait  /* mise en place d'un trait */
+{
+    background-color: coral;
+    height: 2pt;
+    width: 100%;
+}
+
+.nom, .numero
+{
+    width: 380px;
+    height: 150px;
+    float: left;
+    box-sizing: content-box;
+}
+.numero
+{
+    text-align: right;
+    padding-top: 50px;
+}
+.nom
+{
+    text-align: center;
+}
+.dwwm
+{
+    text-align: center;
+}
+
+
+.formations:hover, .connaissances:hover, .passetemps:hover
+{
+    font: normal 30px arial;
+}
+
+.numero
+{
+    position: sticky;
+    top: 0px;
+}
+
+/* Info bulle */
+
+.infos
+{
+    width: 100px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bulle
+{
+    transform: scale(0) rotateY(-200deg);
+    position: absolute;
+    background-color: indianred;
+    color: lightblue;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 0px 0.5px rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(255, 255 , 255, 0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transition: 1s;
+}
+
+.bulle::before
+{
+    content: '';
+    position: absolute;
+    border-bottom-color: 8px solid rgb(204, 115, 115);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 10px;
+}
+.infos:hover > .bulle
+{
+    transform: scale(1) rotateX(0);
+}

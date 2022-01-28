@@ -1,0 +1,100 @@
+body
+{
+    width: 800px;   /* fixe largeur de page */
+}
+
+#entete /* photo + nom */
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: coral;
+}
+.nom
+{
+    flex: 1; /* prend le reste de la largeur par rapport a la photo */
+}
+.photo
+{
+    margin: auto;
+    margin-left: 20px;
+}
+
+#metier /* titre du poste visé */
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: coral;   
+}
+.titre
+{
+    flex: 1; /* prend toute la largeur */
+}
+
+#pgeneral /* création bloc pour recevoir les 2 autres */
+{
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+}
+#lgauche /* création du bloc de gauche */
+{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(209, 118, 86);
+}
+
+
+#ldroite /* création du bloc de droit */
+{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(241, 163, 134);
+}
+
+/* Info bulle */
+
+.infos
+{
+    width: 100px;
+    background-color: rgb(209, 118, 86);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bulle
+{
+    transform: scale(0) rotateY(-200deg);
+    position: absolute;
+    background-color: rgb(241, 163, 134);
+    color: rgb(20, 20, 20);
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 0px 0.5px rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(255, 255 , 255, 0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transition: 1s;
+}
+
+.bulle::before
+{
+    content: '';
+    position: absolute;
+    border-bottom-color: 8px solid rgb(204, 115, 115);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 10px;
+}
+.infos:hover > .bulle
+{
+    transform: scale(1) rotateX(0);
+}
