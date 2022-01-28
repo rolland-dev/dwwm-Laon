@@ -1,0 +1,141 @@
+body
+{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: 'Calistoga';
+}
+
+/* Menu du haut */
+
+.fond
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: teal;
+}
+
+.menu2
+{
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px;
+}
+.menu1
+{
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu1:hover, .menu2 a:hover
+{
+    background-color: tomato;
+    border-radius: 30px;
+}
+
+.menu2 a
+{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.menu2 >a:nth-child(2)
+{
+    color:yellow;
+}
+.menu2 >a:nth-child(2):hover
+{
+    background-color: teal;
+}
+
+/* Mise en forme du milieu */
+.milieu
+{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.img
+{
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding: 25px 10px 25px 70px;
+}
+span
+{
+    color:#ffa500;
+}
+.img1
+{
+    max-width: 50%;
+}
+.img1
+{
+    width: 50%;
+    background-image: url("code_source_3b.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 40px;
+
+}
+.img h2
+{
+    color: black;
+    margin: 0px;
+    justify-content: left;
+    align-self: flex-start;
+}
+
+/*  deuxieme partie  */
+.bas
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url("ecole_info.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bas p
+{
+    border: 3px solid #ffa500;
+    margin: auto;
+    margin-top: 12px;
+    padding: 8px;
+    justify-content: space-around;
+    width: 70%;
+    background: white;
+}
+h2
+{
+    margin: auto;
+    padding: 8px;
+    padding-left: 0px;
+    justify-content: space-between;
+    width: 70%;
+    color: white;
+    text-align: left;
+
+}
+
+
+/* footer */
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    text-align: center;
+    font-style: italic;
+}
