@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html id="corps" class="csshiver" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/ete.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 LE MENU                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="menu">
+        <div class="menugauche">
+            <ul>
+                <li>Accueil</li>
+                <li>A propos</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="menusticky">
+            <ul>
+                <button onclick="cssete()"><img  id="menuimg1"src="/assets/IMG/icon/if-weather-3-2682848_90785.png" alt=""></button>
+                <button onclick="csshiver()"><img  id="menuimg2"  src="/assets/IMG/icon/weather_snow_ice_icon_124163.png" alt=""></button>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              LE SOUS MENU                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <div class="sousmenu">
+        <div id="imgsousmenu">
+            <!-- <img id="img1" src="/assets/IMG/mountains-gefa7c9b51_640.jpg" alt=""> -->
+        </div>
+
+        <!-- CALCULATRICE  -->
+        <div class="calculatrice">
+            <div id="nombres">
+                <input placeholder="0." id="nbr1" value=""></input>
+                <input placeholder="0." id="nbr2" value=""></input>
+            </div>
+
+            <div id="affichage">
+                <fieldset>
+                    <legend>RESULTAT</legend>
+                    <div id="totale"></div>
+                </fieldset>
+            </div>
+            <div id="operateur1">
+                <button id="addition">+</button>
+                <button id="soustraction">-</button>
+            </div>
+            <div id="operateur2">
+                <button id="division">%</button>
+                <button id="multiplication">x</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                       LE CONTAINER + BLOOC TEXTE                        -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class=" container1 ">
+        <div class="divbloctexte">
+
+            <div class="bloctexte"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, in at, hic odit facere expedita quisquam sequi reprehenderit adipisci voluptatem vel iure illum optio asperiores repudiandae velit earum iste nisi! Et voluptatum placeat veniam,
+                quidem eum qui at esse nam suscipit hic consequuntur recusandae vel harum tempore obcaecati ullam odio minima incidunt beatae voluptates, ducimus consectetur maiores quas. Blanditiis, ratione! Est aspernatur totam quasi laboriosam aliquid,
+                modi aut? Corporis eos assumenda distinctio eius libero corrupti eligendi quaerat quae atque officia natus possimus, perferendis quibusdam placeat necessitatibus aspernatur suscipit unde cumque! Aliquam, dignissimos modi minus velit, amet
+                necessitatibus sit ab eveniet perspiciatis cupiditate ipsam et iste repellendus tempore natus soluta. Adipisci aliquam ipsam illo corporis aspernatur beatae sed amet harum. Earum. Modi officia voluptatibus natus omnis cum voluptas necessitatibus
+                unde est labore sed, nemo esse dolorem dolore. Fuga tempore, accusantium aliquid nihil architecto autem cumque enim illum molestias velit, totam ratione. Nisi at veritatis iste eligendi adipisci suscipit autem, obcaecati temporibus minima
+                facilis neque minus consequuntur esse praesentium quo nihil similique fugiat dolorum perspiciatis rerum libero voluptatibus? Error doloremque tenetur modi. Magni consectetur est repudiandae asperiores odio labore dolorem eum, quae ducimus,
+                distinctio deleniti iste suscipit amet quasi eveniet velit, mollitia ipsam harum beatae? Dolores harum eveniet, est consequatur consequuntur reprehenderit. Sit repellendus totam aut a quo placeat cum provident odit ex perspiciatis. Aperiam
+                omnis alias impedit sunt, suscipit ea reiciendis, numquam, id nihil exercitationem officia dolor nulla eius quae possimus! Nulla debitis ipsum sint unde repellendus dolore vel ipsa similique nam sequi. Nostrum praesentium dolorum veniam,
+                explicabo similique voluptatum velit enim quisquam et excepturi? Facere voluptate consequatur quia minima esse? Aperiam est eveniet voluptatum eligendi fugit eius nemo sapiente. Ut impedit rerum dignissimos excepturi ducimus laborum quia
+                doloribus ipsa nemo eius illum dolorum, reprehenderit reiciendis atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusamus veritatis sint quidem delectus, dignissimos quo autem, similique alias facere perspiciatis!
+                Quae quasi placeat nam veniam voluptas quisquam fugit numquam aut quas magnam nulla, dolorum est nesciunt atque iure similique. Repellat perferendis, corrupti vel vitae repudiandae harum. Dignissimos, voluptatem inventore! animi id iste
+                sint.
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                           LES IMAGE EN CERCLE                           -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="imgcircle">
+        <div id="img1" onclick="zoomImg(this)"></div>
+        <div id="img2" onclick="zoomImg(this)"></div>
+        <div id="img3" onclick="zoomImg(this)"></div>
+    </div>
+    <div class="containervideoyoutube">
+
+        <div class="videoyoutube">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/_DVj8ai3zGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            LES LIENS UTILES                             -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="liensutiles">
+        <a target="_blank" href="https://developer.mozilla.org/">
+            <!-- Mdn web docs -->
+        </a>
+        <a target="_blank" href="https://openclassrooms.com/">
+            <!-- open classroom -->
+        </a>
+        <a target="_blank" href="https://www.google.fr/">
+            <!-- Google -->
+        </a>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                LE FOOTER                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="footer">
+        <p>tous droit réservé <span></span></p>
+    </div>
+
+
+    <script src="/JS/script.js"></script>
+</body>
+
+
+</html>
