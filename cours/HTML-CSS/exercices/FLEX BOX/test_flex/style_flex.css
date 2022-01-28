@@ -1,0 +1,54 @@
+body,
+.entete {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    /* largeur page */
+}
+
+.entete>div {
+    border: 1px solid red;
+    background-color: pink;
+    flex: 1 1 auto;
+    flex-direction: row;
+    width: 420px;
+    height: 100px;
+    text-align: center;
+}
+
+.barrecorps {
+    display: flex;
+    flex-direction: row;
+    width: 850px;
+    border: 1px solid black;
+}
+
+.corps>div {
+    display: flex;
+    border: 1px solid black;
+    background-color: red;
+    flex-direction: column;
+    width: 420px;
+    height: 150px;
+    margin: 20px 5px 20px 0px;
+}
+
+.bdroite>div {
+    display: flex;
+    border: 1px solid black;
+    background-color: green;
+    flex-direction: column;
+    width: 410px;
+    height: 350px;
+    margin: 20px 5px 5px 5px;
+}
+
+.piedpage>div {
+    border: 1px solid black;
+    background-color: pink;
+    flex: 1 1 auto;
+    width: 850px;
+    height: 50px;
+    text-align: center;
+    margin: 20px 5px 5px 5px;
+}

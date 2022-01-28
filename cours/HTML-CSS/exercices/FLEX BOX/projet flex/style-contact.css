@@ -1,0 +1,144 @@
+body
+{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: 'Calistoga';
+}
+
+/* Menu du haut */
+
+.fond
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: teal;
+}
+
+.menu2
+{
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px;
+}
+.menu1
+{
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu1:hover, .menu2 a:hover
+{
+    background-color: tomato;
+    border-radius: 30px;
+
+}
+
+.menu2 a
+{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.menu2 >a:nth-child(3)
+{
+    color:yellow;
+}
+.menu2 >a:nth-child(3):hover
+{
+    background-color: teal;
+}
+
+/* milieu de page */
+.milieu
+{
+    display: flex;
+    height: 1100px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: blue;
+}
+
+fieldset
+{
+    /* width: 150px; */
+    text-align: center;
+}
+.fielset2
+{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: burlywood;
+}
+option
+{
+    width: 100px;
+    color: darkblue;
+    background-color: darkgrey;
+    font-size: 15px;
+    font-weight: bold;
+}
+legend
+{
+    padding: 25px;
+    color: red; 
+}
+checkbox
+{
+    color: red;
+}
+.check
+{
+    color: steelblue;
+    background-color: burlywood;
+}
+.check2, textarea
+{
+    background-color: cadetblue;
+}
+/* pied de page */
+.pieddepage
+{
+    display: flex;
+    flex-direction: row;
+}
+.droite, .milieu2, .gauche
+{
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px 60px 30px;
+}
+
+.milieu2
+{
+    background-color: #ffa500;
+}
+
+/* footer */
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    text-align: center;
+    font-style: italic;
+}

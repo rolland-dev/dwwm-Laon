@@ -1,0 +1,101 @@
+/* ECRAN INFERIEUR A 768 PX */
+
+* {
+    box-sizing: border-box;
+}
+
+body
+/* mobile */
+
+{
+    width: 768px;
+    margin: auto;
+    /* display: flex; */
+}
+
+
+/* ENTETE */
+
+header {
+    width: 100%;
+    border: 1px solid deepskyblue;
+    text-align: center;
+    background-color: deepskyblue;
+}
+
+
+/* CORPS PRINCIPAL */
+
+.corps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MENU DE GAUCHE */
+
+.menugauche {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px;
+    background-color: floralwhite;
+}
+
+.menugauche p {
+    margin: 15px;
+}
+
+.menugauche p:hover {
+    background-color: tomato;
+    border-radius: 15px;
+}
+
+
+/* ARTICLE CENTRAL */
+
+.article {
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    background-color: cornsilk;
+}
+
+
+/* BANNIERE PUB */
+
+.pub {
+    display: none;
+}
+
+
+/* BANNIERE IMAGE */
+
+.img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    background-color: darkgrey;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* PIED DE PAGE */
+
+footer {
+    width: 100%;
+    text-align: center;
+    border: 1px solid deepskyblue;
+    background-color: deepskyblue;
+}
