@@ -1,0 +1,11 @@
+un titre
+
+une partie avec input
+	nom, prenom, date de naissance
+
+une partie avec des checkboxs 4 mini
+une partie avec des boutons radio 4 mini
+
+un bouton valider et reset
+
+chaque partie sera encadré et un fond de couleur différent

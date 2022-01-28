@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+/* commentaire */
+
+*****************************************************************
+
+<h1> <h2> ... <h6>
+
+*****************************************************************
+
+<br/> retour chariot
+
+*****************************************************************
+
+<mark></mark> surligner
+
+<strong></strong> gras
+
+<em></em> italique
+
+*****************************************************************
+
+<ul> liste non ordonnée
+	<li>...</li>
+</ul> avec puces
+
+<ol> liste ordonnée
+	<li>...</li>
+</ol> numeroté
+
+*****************************************************************
+
+LIEN
+
+<a href="http://...">nomdusite</a>
+
+<a href="page du site">
+
+avec ancre
+
+<h1 id="arc">le tir a l'arc</h1>
+<a href="#arc"> le tir a l'arc</a>
+
+*****************************************************************
+
+IMAGE ( GIF / PNG / JPEG )
+
+<img src="chemin image" alt="légende image" title=" titre" />
+
+
+******************************************************************
+<?php ... ;?>
+/* commentaire */
+
+protection : htmlspecialchars
+
+******************************************************************
+ $bdd = new PDO('mysql:host=localhost;dbase=test','root','');
+
+******************************************************************
+
