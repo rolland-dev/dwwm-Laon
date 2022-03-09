@@ -1,0 +1,45 @@
+#contact label {
+    width: 100px;
+}
+
+body {
+    background-color: #7ded83;
+}
+
+.image-intro img {
+    width: 100%;
+}
+
+h1 {
+    background-color: #6da34d;
+    color: #0cd10f;
+}
+
+#equipe {
+    text-align: center;
+}
+
+.footer {
+    background-color: #6da34d;
+}
+
+h3 {
+    padding: 10px 0 10px 0;
+}
+
+@media(max-width:"577") {
+    width: 1024px;
+    margin: auto;
+}
+
+.rounded-circle {
+    height: 70%;
+}
+
+textarea {
+    width: 70%;
+}
+
+input::not(.bouton) {
+    width: 80%;
+}

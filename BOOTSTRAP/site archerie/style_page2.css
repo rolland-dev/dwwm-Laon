@@ -1,0 +1,113 @@
+    nav,
+    .dropdown-menu,
+    .dropdown-menu a {
+        background-color: yellowgreen;
+    }
+    
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+    
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+        background: rgb(180, 78, 78);
+    }
+    
+    .entete,
+    .footer {
+        background: grey;
+        text-align: center;
+    }
+    
+    .entete img {
+        margin: 0;
+        width: 80%;
+        border-radius: 30px;
+        padding: 5px 0;
+    }
+    
+    i {
+        padding: 15px;
+        color: rgb(180, 78, 78);
+        font-size: 24px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .centre {
+        background: rgb(159, 202, 72);
+    }
+    
+    .gauche,
+    .droite {
+        background: rgb(180, 78, 78);
+        text-align: center;
+        /* padding: 10px; */
+    }
+    
+    img {
+        width: 80%;
+        height: auto;
+        margin: 15px 0px 15px 0px;
+        border-radius: 15px;
+    }
+    
+    .infos,
+    .divers {
+        text-align: center;
+        color: black;
+    }
+    
+    .divers img {
+        border-radius: 75px;
+    }
+    
+    .infos p {
+        background-color: burlywood;
+        padding: 15px;
+        border-radius: 80px;
+    }
+    
+    .nav-link img {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        border-radius: 85px;
+        box-shadow: 10px 5px 5px rgb(180, 78, 78);
+    }
+    
+    .carousel-item img {
+        width: auto;
+        max-height: 300px;
+        margin: auto;
+        margin-top: 50px;
+        display: block;
+        box-shadow: 10px 5px 5px rgb(180, 78, 78);
+    }
+    
+    button {
+        background-color: rgb(180, 78, 78);
+        border: rgb(180, 78, 78);
+    }
+    
+    .card {
+        background-color: burlywood !important;
+        font-size: 1.5em !important;
+        border-radius: 0.5rem !important;
+        margin-top: 5px !important;
+        margin-left: 8px !important;
+    }
+    
+    .card-body {
+        padding: 0.5rem !important;
+    }

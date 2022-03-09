@@ -1,0 +1,15 @@
+h2
+{
+    border: 1px solid rgb(247, 65, 65);
+    background-color: rgb(247, 65, 65);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.lien
+{
+    border: 0px solid;
+    background-color: silver;
+    padding: 5px;
+}

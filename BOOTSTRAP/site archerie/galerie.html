@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Galerie</title>
+    <script src="contenu_fichier.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style_page.css" />
+    <link rel="stylesheet" href="fa/css/all.css" />
+
+</head>
+
+<body>
+    <!-- Mettre le code html ici -->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-item nav-link" href="https://fr-fr.facebook.com/pages/category/Stadium--Arena---Sports-Venue/Archer-de-Guignicourt-425494704478062/" target="_blank"><img src="images/cc/fb.jpg" alt="fb"></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="accueil-arc.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="galerie.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dirigeants.html">Dirigeants</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Divers</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="fiche_archer.html">Fiche Archer</a>
+                        <a class="dropdown-item" href="contact.html"> Contact</a>
+                        <a class="dropdown-item" href="horaires.html">Horaires</a>
+                        <a class="dropdown-item" href="cgv.html">CGV</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid ">
+        <div class="row entete">
+
+            <div class="col-md-1 d-md-block d-none pr-0 "><img src="images/cc/archer-gg.jpg" alt="archergg"></div>
+            <div class="col-12 col-md-11 text-center align-self-center ">
+                <h1>Compagnie des Archers</h1>
+            </div>
+            <div class="gauche col-xs-12 col-md-3  ">
+                <h3>Notre Club</h3>
+
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Concours interne</p>
+                    </div>
+                    <button onclick="choixCarousel1()">
+                            <img src="images/cc/cc1-2019.jpg" alt="images " />
+                         </button>
+                    <div class="card-body">
+                        <p class="card-text">2019</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Concours interne</p>
+                    </div>
+                    <button onclick="choixCarousel2()">
+                            <img src="images/cc/cc1-2018.jpg" alt="images " />
+                         </button>
+                    <div class="card-body">
+                        <p class="card-text">2018</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Concours ASFELD</p>
+                    </div>
+                    <button onclick="choixCarousel3()">
+                            <img src="images/cc/asd-3.jpg" alt="images " />
+                         </button>
+                    <div class="card-body">
+                        <p class="card-text">2017</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Concours interne</p>
+                    </div>
+                    <button onclick="choixCarousel4()">
+                            <img src="images/cc/concour-3.jpg" alt="images " />
+                         </button>
+                    <div class="card-body">
+                        <p class="card-text">2016</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Divers ASFELD</p>
+                    </div>
+                    <button onclick="choixCarousel5()">
+                            <img src="images/cc/concours-4.jpg" alt="images " />
+                         </button>
+                    <div class="card-body">
+                        <p class="card-text">2016</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="centre col-12 col-md-7">
+                <div id="contenufichier">
+
+                    <!-- contenu carousel dans fichier  -->
+                    <script>
+                        function choixCarousel1() {
+                            afficherContenuMobile("concours-2019.html");
+                        }
+
+                        function choixCarousel2() {
+                            afficherContenuMobile("concours-2018.html");
+                        }
+
+                        function choixCarousel3() {
+                            afficherContenuMobile("concours-2017.html");
+                        }
+
+                        function choixCarousel4() {
+                            afficherContenuMobile("concours-2016.html");
+                        }
+
+                        function choixCarousel5() {
+                            afficherContenuMobile("concours-2015.html");
+                        }
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="droite col-12 col-md-2 ">
+                <h3>Liens Utiles</h3>
+                <a href="http://www.ffta.fr" target="_blank"><img src="images/cc/ffta.png" alt="ffta" /></a>
+                <a href="http://www.boutik-lyon-archerie.com/" target="_blank"><img src="images/cc/lyon-archerie.png" alt="images 2" /></a>
+                <a href="https://www.heraclesarcherie.fr/" target="_blank"><img src="images/cc/heracles.png" alt="images 3" /></a>
+            </div>
+
+            <div class="footer col-12 ">
+                <i class="far fa-copyright">&nbsp; Copyright 2020</i>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

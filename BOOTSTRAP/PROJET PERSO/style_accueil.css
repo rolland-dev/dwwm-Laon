@@ -1,0 +1,81 @@
+h2 /* Définition titre de la page */
+{
+    border: 1px solid rgb(247, 65, 65);
+    background-color: rgb(247, 65, 65);
+    text-align: center;
+}
+
+/*  Définition de la page principale */
+.page1
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/*  Définition de la banniere pub */
+.pub
+{
+    display: flex;
+    width: 180px;
+    height: 800px;
+}
+
+/*  Définition de la page principale avec les articles */
+.page1 > div
+{
+    flex-direction: column;
+}
+
+/*  Premier article */
+.article1
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    width: 700px;
+    height: 220px;
+    background-color: salmon;
+}
+
+.aside1
+{
+    background-color: rgb(243, 152, 142);
+
+}
+
+/* Second article */
+.article2
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    width: 700px;
+    height: 220px;
+    background-color: rgb(204, 107, 96);
+
+}
+
+.aside2
+{
+    background-color: rgb(151, 71, 63);
+}
+
+/* Images pour les pub */
+.pub1
+{
+    width: 180px;
+    height: 220px;
+    background-image: url("images2.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.pub2
+{
+    width: 180px;
+    height: 220px;
+    background-image: url("images3.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}

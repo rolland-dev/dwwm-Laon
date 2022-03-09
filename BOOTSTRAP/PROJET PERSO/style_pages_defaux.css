@@ -1,0 +1,136 @@
+body{
+  font-family: 'source code pro', cursiva, serif;
+  margin: 0px;
+  padding: 0px;
+  width: 920px;
+  box-sizing: border-box;
+  /* background-image: url("images.jpeg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  
+}
+
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul > li{
+  float: left;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+.sousmenu{
+  display: none;
+}
+
+nav li:hover .sousmenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+}
+
+nav{
+  width: 100%;
+  background-color: #424558;
+}
+
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.sousmenu li{
+  border-bottom: 1px solid #ccc;
+}
+
+.sousmenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+.menu-stock:hover{
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228,77,38,0.15);
+}
+
+.menu-entree:hover{
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000,112,192,0.15);
+}
+
+.menu-sortie:hover{
+  border-top: 5px solid #f1dc4f;
+  background-color: rgba(241,211,79,0.15);
+}
+
+.menu-location:hover{
+  border-top: 5px solid #bbb;
+  background-color: rgba(220,220,220,0.15);
+}
+
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+
+.menu-stock .sousmenu{
+  background-color: #e44d26;
+}
+
+.menu-entree .sousmenu{
+  background-color: #0070bb;
+}
+
+.menu-sortie .sousmenu{
+  background-color: #f1dc4f;
+}
+
+.menu-location .sousmenu{
+  background-color: #bbb;
+}
+
+.sousmenu li:hover a{
+  color: #eee;
+  font-weight: bold;
+}
+
+.menu-stock .sousmenu li:hover{
+  background-color: rgb(210,77,60);
+}
+
+.menu-entree .sousmenu li:hover{
+  background-color: rgb(000,115,200);
+}
+
+.menu-sortie .sousmenu li:hover{
+  background-color: rgb(200,165,75);
+}
+
+.menu-location .sousmenu li:hover{
+  background-color: rgb(220,200,170);
+}
+

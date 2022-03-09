@@ -1,0 +1,60 @@
+.nom,
+.contact,
+.langues,
+.competences1,
+.competences2,
+.experiences,
+.formations,
+.footer {
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: rgb(187, 156, 115);
+}
+
+.card {
+    background-color: rgb(197, 139, 63);
+    border: none;
+}
+
+.langues i {
+    background-color: rgb(187, 156, 115);
+}
+
+.col {
+    background-color: rgb(187, 156, 115);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.contact {
+    background-color: rgb(197, 139, 63);
+}
+
+.card-img-top {
+    border-radius: 50%;
+    height: 60%;
+}
+
+.competences1,
+.competences2,
+h3 {
+    background-color: rgb(238, 176, 95);
+    border-radius: 15px;
+}
+
+.experiences {
+    background-color: rgb(206, 162, 106);
+}
+
+.formations {
+    background-color: rgb(230, 200, 162);
+}
+
+.footer {
+    padding: 15px;
+    background-color: burlywood;
+}
