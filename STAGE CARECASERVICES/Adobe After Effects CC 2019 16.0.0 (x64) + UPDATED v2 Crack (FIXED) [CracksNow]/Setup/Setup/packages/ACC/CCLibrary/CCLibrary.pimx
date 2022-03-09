@@ -1,0 +1,17 @@
+<package_installation_info version="2.0">
+<packageid>8352436A-06C4-4CD7-9798-B8DFA0A1878D</packageid> 
+     <name>CCLibrary</name>
+<version>4.6.0.315</version>
+    <target_location>/CCLibrary/</target_location>
+    <packages>
+        <pimaInfo>
+            <packagetype>zip</packagetype>
+            <name>CCLibrary</name>
+            <assets_size>26</assets_size>
+            <validation_info>
+                <validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+                <sig>FaShKBTaU0tRPmSVXVDlMUijfukx09IcwWGAbVtnmJan91TH+qJJQBLe3HJbXqOZWhKX6HpC722iM3pPGHN5a6PDULs4gLtifiP4edX9oRjhBfp2DvUZEU5Z4fnT44UH+qsMI5sbSwWgeO4Qmf9xOUN2ZvK1DXd0VogNaJz3rSboV8yw/JN0oQ2FJ+x8I0GhrIVC1jZgp+ALrs02bXiMCwo3LLoDmgrtsfQw0vJ3RzzItpols4IR/x6pC74m7UqWnpray3c0gDEGXAfXy9iROiFe91epqD3CADPb5ydiPr/KI0j9HGOS/RmsUTlFOenIwimflSjHNldLx/Dp02aUYH6Nx2YRwzN/akQn2GgLRUyjhedXycuTJw1mxP/EFYiYpR83cLcUyZCewb0Jdl8uWoJUdTKMemkxi1Lw70JZEjmIrYV0bPc9C7J6c2a2IPGWOIBDl3nMNs+MMfx0fKuO/Sx7qs+sI2iJB6ky9HdypwU3tq7u0qXGQFi035Nnc4NZ</sig>
+            </validation_info>
+        </pimaInfo>
+    </packages>
+</package_installation_info>

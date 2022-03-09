@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Signature Version="1.0">
+  <pima>
+    <FileName>AdobeGCClient.pima</FileName>
+    <FileSize>2123888</FileSize>
+    <CheckSum>iY5rTvLc+M0fcHG4TRFCUXpzMPEpPjiVvLmiUfa3EDZLFzV8ndQExDCxryEMRty3aYGrCvtZJGJ8XhR183GvH7lDykBop/KkEnuL4lIbDQcbRVitfDglCrpWi02whLY/HP5oXwvRewR9o9DSu5MKBqosYhCNkeXhsyL4On0lLUna7fSvXSfvgcvmrQLuggp3cq9fmtecmOD3IUrHEM9re6MOUYH1GYwoCdADRdz5Ld9kYVncMBKLX02xOse9VKK6oKm8+xyJK6NDXSQjKb/yC4sAkaU37DJMuzHVmZrztoTZCkFvrhb+APPlrDMhEzufvl11pYxyHxjcuvMBR40bYCqNnwO/Kln3qf5LU9R7qLQashQEKMQHcTMGTG5knPeio+yLyiFfFhvtVu+TzudJxI9r10o0lxr8nBjIj1u/llJlWaqyC9RuChPg+MaojvySt9m0gqaq4vJUAG81p6n2cSiR+UYv2QjmGOwzJeZ2PZjQzdRrwnyQ8LmaWxhrcDzp</CheckSum>
+  </pima>
+  <pimx>
+    <FileName>AdobeGCClient.pimx</FileName>
+    <FileSize>25934</FileSize>
+    <CheckSum>NxDrPVtu6i1L1BWLsfWulOUR/vXVsXl5GCe+Kbn9GxQnskviElFPWO1OidVbfNhyGSzjlItmmZIGL5/3wQlml98X7v3XYnUxJIfpuftlJaR/ld1NN/eNoShyDjV+XfcNres8NLFJguZ7VHqIdLq1BMEJdH5F8FZzkE1v+pMZzoTq9oba5foW6lGE3ac/Ujm+96f37M6cZsXlvteG2wJyqv30SvWcJACizH5QeH6dM25U4zyb+/gQPe/tZWknKWBi2olEMa2S6J0CoNG7x4LxYJMHjzZV5Ws4hzxG1pEGulJkjIb6GFIFAonpu3mCsmSplN6/ZLEKJ9RZJ+DaUmuCdsrNgGeB++w9NWdm9lGZbiDdx8KTFDVdqgPithcXAjen3YevJdSib/mN41BrH8HHNEULB4i/kWueUEL09TP8RgAKt/fq1TuMGStV0+VrD8KMzv7lhubV+oVgrB+VOgekLayAEj/FD0z2RY5RbQsUNU/+3A9xNwx+C5ueA4elnZ6v</CheckSum>
+  </pimx>
+  <Sig>EHE0QcHypRg3Bhne9NugEcGsEuLpbC3BZr12xuJYwest4pG6BnXwPmIY/r0jzwHqMlymQ7puebW7mMx7AyX7Xotse4gtHcfbffZpk97hDuLpJ5HjQKtFbhf+ddrNoOEP+nI695BDYIhJjy9dNefKSHptWSf6+PWGZhKyJfHUhdkHB+am1y4KzT/kXK78geiE8EjwZxerl5OwUsYsjP277IIsArVETJYm4tsYOlDerpQJ4KJv0wol0vzqd5BYHRmIJNLHAv7ZgP5TdE0NnnMGi2axRtUrAfrG+qGO4E+9M8PgvAZNH9zyFR+BkguNU+IS8quYCSlMemhvMVQLsA/xbJN/PwLH2A6sabgniAVLOuoZV96VeRVEnf93OkEJosDb6SwPaDneKLP/JIK2wO3MvA8Gah+YvisxLzwnoDhHPGQm4bIOJQLvWak8gR2oxJrNX5rbdrCKOJB92/gjCpTinJvh6KkMv8efFXC3xIGfdCvLtAeOqO0qUEYWcsX1axLd</Sig>
+</Signature>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Signature Version="1.0">
+  <pima>
+    <FileName>CoreSyncExtension.pima</FileName>
+    <FileSize>190</FileSize>
+    <CheckSum>f8L+TYU8jMR5PzNj1NiK8onD0C9RL4+3JJwJzU7jvSeFU/yFqm0R+8M6Jglgkp/xnV400VlW6TI4qWZCT9u5cfczYzQxbnPtEH3GiL/KEJnai1ymXutqUYICVmfMWFtJa9bpZQbiCBn0xWQhHjn/Ep5qPQK6z2Igdt9xazTctaAyRQcvs4QoirhHo624yjmvOjo+1ZqkgatBIS7WcC+PTtBvTLOrB7DJVZggs+kHfcNbMA5Y/oJygOyY6hqcc7PCLp78YbRn2zjL0TaYtACFjjqluiuxlHOS+XcQvU8m7eBHSRS+KrWBUqaXU2FNUdTGeGrz0rsro9iJZgBTiC/SN7geB4XzjTC+0wXkCWSWvYVRb+fQPNazU9LxnHX2UDSno8p8A7ooX6Lig79ptlsIArrSG0sC+FpJfgjagb0al1VUzPfGSKSgjwYpUh22R4gARM7FMLR7c4OoQCwmrOPvqJN5TwsI3gqTZP0i0rRb+N7dQfvjisyL3H42cJ9qH9PV</CheckSum>
+  </pima>
+  <pimx>
+    <FileName>CoreSyncExtension.pimx</FileName>
+    <FileSize>1209</FileSize>
+    <CheckSum>pKeFR4TbU/R9by/DeITmWi2pRZEBRHxm3SPMsqkTjdq5akBtO8AEKo1FYp716pi2wsj2ZK0GECo7PIQJVNiDDJfII8wpQqneZ1WjpvKfokfhXATQB/O8agOfPOMMGSX2D/+DuT1lnGbFSK/z4uSfo4y1d//0sOJHRl2ap1m/nzFiAC6ScMQYz6bomzZxupnocicYzSv3NbYKgypmaRSYD5FqX6dbuRMx9BOi33Kh/FB3bdHqSg7TlwfEy5m88teAAGkRT+stS2+O1PxKNFlxeOhDW5m+0goWRR8VG87ViHfmoB8ytokhgAUyUxZvuELnGczay2rloPaz1r0vCvZrN7jOoDcZeJKtBr4cgp0OOlIczlN2j736hhZCL+xEpHnfP84ZtDSkcTzTDr7RemyYlvlCXjPTog3DPZw0XJi9Ke0UKfBXDYame+iXEgJ8fW9/QyvNABVw3+NryTHcL2uDEQ9rHQo0cemhOUQKH+nK8qETLXs+j01tlSzmu2oKflmx</CheckSum>
+  </pimx>
+  <Sig>rY2NKUXKLfBzWxncAGbSAHK6CRaWiABIksMyfm19oR6FrsbVBb5uALZYhCjEV4TjdTqngEW32jDhmGZ9GoNprJgLEkSSOAJgmL/jZNF393rA0MJtUarrPM+FGiABwYhLEYa/ObzHWfqqMyGfwcudisP0XQ0e3T9swOoK15LkIdp5iCt8OEU/3sBraizxxROq/PWWjz3ZHEy35YNsblGV4AzWLBs/8HuprDM5683wKA11tcOG076QEvePq/1OATnZK+UEQkhS3gRGWbXkVkijcvdbonKAgIw1CDGCSQMODupHomFLiNlzMU/8cZ4iUu+VSEmy2PG+BRnO0ubZSrfQidZaXBeAr4XxreHR/v7XL2XAw+EpHlcDpXsCXZ17yuLOqfOgd3EcM5tJzH8UVln5ajdOFpWR1iMhQrB9GzAgB1gzsp/pwk02KfocYljmzYc1PLceS+T//37YUJ9q5za7V/pkaXbTdViT5VqAVqye7zjBbX0vfPTxP9ihcxpcW+xk</Sig>
+</Signature>

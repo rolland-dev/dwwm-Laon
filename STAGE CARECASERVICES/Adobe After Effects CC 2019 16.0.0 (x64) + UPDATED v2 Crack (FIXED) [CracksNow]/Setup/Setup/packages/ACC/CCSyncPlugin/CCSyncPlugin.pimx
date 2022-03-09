@@ -1,0 +1,20 @@
+<package_installation_info version="2.0">
+<name>CCSyncPlugin</name>
+<packageid>E53F7262-F210-46F1-BAC6-07C2F66C64CC</packageid> 
+ <version>4.2.0.88</version>
+ <target_location>/CoreSyncPlugins/CCSyncPlugin/</target_location>
+ <package_upgrade_info>
+ <old_packageid>ccsyncplugin32</old_packageid>
+ </package_upgrade_info>
+ <packages>
+  <pimaInfo>
+   <packagetype>zip</packagetype>
+   <name>CCSyncPlugin</name>
+   <assets_size>26</assets_size>
+   <validation_info>
+    <validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+    <sig>LpxyB/fWiSK79icQsYyoZrND2M4DZ5J3S3n0+ghSqrEWL9SSKkyK494qnhJFAto3Q0vUy9W1UrId/fDUpmej/wi4JZN7Cmp8skB/lTFHJ/WVrLtbHDWAeH81+Qf42BWCI/npdVbNoj4wDcNZJG9ODIPfT28HRrWWnNIAS5Ah8eSzXNqKiPah3gJcQJlM2MWCIHP8/vWHLVrOPUdWrg8uRlMzGcl6Q8wXRwSbzAb2QkYTaQFuzWmuZ1zZXxUN2UkkFOb4zk4Ctdi/msAYGbiDpOH94N7if/dC4FUNhxaW38EC+xOKxC3wlOnPCsm5zf2+qul0sZ/x7nwEY3w4hR8v0X4tfI9ZOSUTsri5UVBNkGxTcs9TyqytAKQT0bvcmsXPir9hbSyVTNqKznXqFFJVAHQiCiIASjC+Lbup5ECe6nE1M8NYuO8JCXeoTrZkmNP0/ajWLLctdzd4erKLmJPsfTyYBL9BJhXymrexfEz8ivf501VMF3IX3tk1TwypyOyb</sig>
+   </validation_info>
+  </pimaInfo>
+ </packages>
+</package_installation_info>

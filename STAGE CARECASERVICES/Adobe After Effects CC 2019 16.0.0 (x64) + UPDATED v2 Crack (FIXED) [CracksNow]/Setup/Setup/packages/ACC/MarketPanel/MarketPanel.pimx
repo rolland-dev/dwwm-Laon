@@ -1,0 +1,65 @@
+<package_installation_info version="2.0">
+<packageid>AF821A0F-92BD-4D72-9527-13EA898380F8</packageid> 
+ 	<name>MarketPanel</name>
+<version>4.7.0.400</version>
+	<target_location>/MarketPanel/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype> 
+			<name>MarketPanel</name>
+			<assets_size>3495394</assets_size> 	
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>MarketPanel</name>
+					<type>UI</type>
+					<version>1.0</version>
+					<module_path>/MarketPanel/resource/ui/marketInit.js</module_path>
+					<display_name>MarketPanel UI</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>MarketPanel</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<module_path>/MarketPanel/MarketPanelBL.dll</module_path>
+					<display_name>MarketPanel BL</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<applet_relationship_info>
+				<applet_relationship_element>
+					<name>MarketPanel</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<relationship>PanelOf</relationship>
+					<relative_name>AssetsPanel</relative_name>
+					<relative_type>BL</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>3000</relative_order>
+				</applet_relationship_element>
+				<applet_relationship_element>
+					<name>MarketPanel</name>
+					<type>UI</type>
+					<version>1.0</version>
+					<relationship>PanelOf</relationship>
+					<relative_name>AssetsPanel</relative_name>
+					<relative_type>UI</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>3000</relative_order>
+				</applet_relationship_element>
+				<applet_relationship_element>
+					<name>MarketPanel</name>
+					<type>UI</type>
+					<version>1.0</version>
+					<relationship>UIX</relationship>
+					<relative_name>HEX</relative_name>
+					<relative_type>UIX</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>3000</relative_order>
+				</applet_relationship_element>
+			</applet_relationship_info>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8+PEZpbGU+PEluc3RhbGxQYXRoPk1hcmtldFBhbmVsQkwuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVke3x9RGlnaUNlcnQgRVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNlIEVWIFJvb3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjwvVmFsaWRhdGlvbkluZm8+</validation_xml>
+				<sig>Dfvkd5oNbxwT2zyoPieqTjF7m9FcN+qRVTANKNqQ2VG1skaFmkHiU6lsCbLEE/CFmk0MbLMc5mOP9J168d25AvcSPAJ1U94dgDinTxMA2bt7ZTAa/LClhc86DInDLmt6WAuDFz/lNIMcdhgx0rbgi0QA372mh/gW3Sv/oXkahYEClmyba2BowVvL1MnkZasGQvln9L5GoUyBlz7xBKQHCp5BUq5WtCrFNwgi77YNvVnIUYIZeQU7n1OgUPonOxBWajWvh1ipPtAaFWlQ3wwTgX2TDDu4krgYbCwnvxhoHdvHrcbU+4Y4/AeMgAULr/1lzZfs0ccptlWPqi2o29bAKeXmwKO6jg8b7LJB9yN0FC3m6+PjJWRu2ciqxleqHfZooOuB4pllf9hCjMqop+YYiChw5fe+OGiBCgmDAaVea+7Fn12tASMX1AeYL+O/BF862IVxCGLmb6VvaPGDZo/sK9yA7EJ5vTBpl/DgnK03Kx1F90jG+aMbC9MwJbaUympM</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

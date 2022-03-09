@@ -1,0 +1,17 @@
+<package_installation_info version="2.0">
+<packageid>0B2C90D2-FBBC-4A2C-A0D3-6BF02FF65EE8</packageid> 
+     <name>CCXProcess</name>
+<version>4.6.0.307</version>
+    <target_location>/CCXProcess/</target_location>
+    <packages>
+        <pimaInfo>
+            <packagetype>zip</packagetype>
+            <name>CCXProcess</name>
+            <assets_size>26</assets_size>
+            <validation_info>
+                <validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+                <sig>mjsRGbCHiCp3H1xvlBS+aJvDkMQqaOzUdjMY4VSarKTZLZemBmv4iqC+/lsA94KRXL3XybK149PHvqYgAP/PE7zsLa85/UzLWlycKIs5K6IUCJZUnC4W81OtVWGofKWKumkKd6hhz53wciRQ0SdQe/6I5ro7zh870OJs1cEwuZ0dlf6TJvAyMXFfxPc5dv3tRRCGJuXjPxDFVgKCUshuZ2YmaOX2yu9825ruShbi9ZdKt+ec2V7ueOvg9/zNkGv94QVlbRPMcc7IkQ3NTgOJ9VDNQTWUVo6yuZea1aoppk0cG2HuBxXNIFMy73AZmqD3B5vHgj8ZfSvbmddsobtyznBmCYL5eui9KqLx24KYWxx72ulD+pPg2khsbVe03VmnN5n062ccfROEKwxcWneg2yKJ+tDwWw22DlUTH34z/HUvJ/ZbZUUCdUBY5QfVI54EnxN6yHlBLoTadLLDzwU8QSi89itaWITTNqlpei6XvOdnG2oLRSU16ak62uNrU35n</sig>
+            </validation_info>
+        </pimaInfo>
+    </packages>
+</package_installation_info>

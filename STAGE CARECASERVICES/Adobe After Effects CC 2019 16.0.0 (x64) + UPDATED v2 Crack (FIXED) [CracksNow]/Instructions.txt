@@ -1,0 +1,22 @@
+Make Sure the Adobe Application you are trying to crack is fully closed.
+
+1) Extract the Setup Archive & Launch CCMaker.exe
+
+2) Select the "Install" option & select the "Installer" folder (from extracted files)
+
+3) Click on Install & Wait for it to finish.
+
+4) Extract the Crack Archive.
+
+5) Find .dll or .exe which was extracted 
+	from the Archive Install Directory
+	it can be inside sub-folders.
+
+6) Replace the .dll or .exe in the Install Directory
+	with the given .dll or .exe file in the archive.
+
+7) Launch the Application now. 
+
+Keep visiting Cracksnow.com for latest cracked application for Android, Windows & macOS.
+
+https://cracksnow.com

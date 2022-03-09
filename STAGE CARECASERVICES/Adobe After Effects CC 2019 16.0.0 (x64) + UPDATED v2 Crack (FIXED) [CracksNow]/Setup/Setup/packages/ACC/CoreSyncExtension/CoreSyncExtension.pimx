@@ -1,0 +1,20 @@
+<package_installation_info version="2.0">
+	<name>CoreSyncExtension</name>
+<packageid>7BB31D2E-AE66-487A-BBA3-EE70D17994B4</packageid> 
+ <version>4.2.0.88</version>
+	<target_location>/CoreSyncExtension/</target_location>
+	<package_upgrade_info>
+		<old_packageid>coresyncextension32</old_packageid>
+	</package_upgrade_info>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>CoreSyncExtension</name>
+			<assets_size>26</assets_size>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+				<sig>Epwvq/2Nb1vz06vyi53Pq0gQ2CUIn/JGA2b4YXeHCA9jDsZq5Lz+LqWX80kxwXUYKoQNIAwSPqM1OpLLRmiI/LWloKUkr+e15zIEsWUe9CyX1AW5m4aZ14FAig4j0J2/jqVF3RR0xYnsPF4eTKmNvwaVl9YlB0u8iMRHo/HN6kMnbKTJMQriuq4sn8gK3hT3X4Mu7E4RRXfij5hamVn/jNKJeqEWbU4+qLKXgZOhhxL19YyQw1S33vrvIFGrn1UmnNZQAybKiE2Uutvgjg/VSwricJbpF6IRvHEExpQq3ybgT4u9mrBKFfrKFSKRUqw+eRp96mehbABh+fWunqDyF4t2zQTMBVAEkmrtzM2zTqAUEpxDrju0Etd7Gx1opE/HP+hOP5W2wO1Sr4mseGYyxY1uxxCS5mG5tviU2unVXYhw8RXV3IBoPHHCQRAO//dmhy41UxxHM4UoildM2M7U8IsWF1R4u5lTqjh1OiOkcIL9OKNUA9Y5QdGw6kH/0drD</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

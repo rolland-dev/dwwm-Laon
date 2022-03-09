@@ -1,0 +1,65 @@
+<package_installation_info version="2.0">
+<packageid>70FB0666-3462-4A2A-A6B2-A6B25FB7CCE1</packageid> 
+ 	<name>AssetsPanel</name>
+<version>4.7.0.400</version>
+	<target_location>/AssetsPanel/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype> 
+			<name>AssetsPanel</name>
+			<assets_size>328321</assets_size> 	
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>AssetsPanel</name>
+					<type>UI</type>
+					<version>1.0</version>
+					<module_path>/AssetsPanel/resource/ui/assetsInit.js</module_path>
+					<display_name>AssetsPanel UI</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>AssetsPanel</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<module_path>/AssetsPanel/AssetsPanelBL.dll</module_path>
+					<display_name>AssetsPanel BL</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<applet_relationship_info>
+				<applet_relationship_element>
+					<name>AssetsPanel</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<relationship>PanelOf</relationship>
+					<relative_name>C3Container</relative_name>
+					<relative_type>BL</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>3000</relative_order>
+				</applet_relationship_element>
+				<applet_relationship_element>
+					<name>AssetsPanel</name>
+					<type>UI</type>
+					<version>1.0</version>
+					<relationship>PanelOf</relationship>
+					<relative_name>C3Container</relative_name>
+					<relative_type>UI</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>3000</relative_order>
+				</applet_relationship_element>
+				<applet_relationship_element>
+					<name>AssetsPanel</name>
+					<type>UI</type>
+					<version>1.0</version>
+					<relationship>UIX</relationship>
+					<relative_name>HEX</relative_name>
+					<relative_type>UIX</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>3000</relative_order>
+				</applet_relationship_element>
+			</applet_relationship_info>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8+PEZpbGU+PEluc3RhbGxQYXRoPkFzc2V0c1BhbmVsQkwuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVke3x9RGlnaUNlcnQgRVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNlIEVWIFJvb3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjwvVmFsaWRhdGlvbkluZm8+</validation_xml>
+				<sig>QjQ6FLe4WPWTPjzpYwylDUrzznLio2nxsy0TtBlGuvyevwGJnFVAiVv0kocAggc3FHEl05juPLX1xX5w90x+MKSA0eqqJEMMyVohGHe5MMkJOC2QGyD5VU9c7OX7Cqo8tr9BGbmkZeE//StqZ6o3b4+qkMAL4o87XRAa5WcFPdL3xOrJhbkVsyM57cJx/DmcPd2m8XBzk6m3GC0w3jTnhldvalj4Pcrz2BgsCVmJbwnJmJGnjRNa9VOL9jCIUkZbLEP6m5n2VVAKOW2tgiDCRE7t4EMqS9s4grS9PO4d+iCEjDBjvJPHZn7divxh7xqnl5RS9ZlyQ0tvBtJyj0ijvZoJMc0Tketa4mwg0r2IeRUccVXlrRGZaq1lakr2SZiJGdtlJt/03g8EQueO2fE2KPk1BoGdOg7NIcVKB92ZCAHkdJ3mgOkNseTwcGYbP/jAlZfUv1CXR5hLK0yiybPULUGOOeNWTKo6bY4UiwDxzKm4h1O/1E42BIXfnvrl+9TZ</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

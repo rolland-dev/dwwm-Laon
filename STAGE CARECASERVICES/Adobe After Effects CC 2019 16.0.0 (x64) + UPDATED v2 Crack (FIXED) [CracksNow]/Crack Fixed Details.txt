@@ -1,0 +1,9 @@
+Crack Fixes - 
+Fixed Photoshop still running in bg after closing. 
+Also confirmed to have faster startup speeds. 
+HEVC H.265 Working now. 
+Improved Stablity 
+
+Thanks to Zer0Cod3
+
+Keep visiting cracksnow.com 

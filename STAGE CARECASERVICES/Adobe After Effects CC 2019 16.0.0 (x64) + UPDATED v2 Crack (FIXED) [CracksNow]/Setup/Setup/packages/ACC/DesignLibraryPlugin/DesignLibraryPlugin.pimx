@@ -1,0 +1,20 @@
+<package_installation_info version="2.0">
+	<name>DesignLibraryPlugin</name>
+<packageid>530D0029-C22F-42F8-9D54-E38E2456CAEA</packageid> 
+ <version>4.2.0.88</version>
+	<target_location>/CoreSyncPlugins/DesignLibraryPlugin/</target_location>
+	<package_upgrade_info>
+		<old_packageid>designlibraryplugin32</old_packageid>
+	</package_upgrade_info>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>DesignLibraryPlugin</name>
+			<assets_size>26</assets_size>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+				<sig>nPhw7JQm8YS4BAVEipFL+T0w5Gc4AH/a6d8kphkWZZW7KRVBuNkwd9jjC6mepHmgVm1eqHoOdNKhn5pa9sGcbf+R9yMD8lyjJC3H8QjUdegBDTNiKkifXUSo1zkxMoidk0lAJQMtrYknpIp3XBmuMxzKgDu+biYDxU6oKaSkuSSERyItGx3FGSIUvJ3un/rdiPIGaTm1wMdjsMYStvOzUEHTz8Hp6h1o52X3qGp1hRi+tbg2JiR0J/DXbwD0vny38BVmRcT/bOVSDfEtUvgNKjlXcS4GY8UK6un9Kmu6Ptr92IGrVS41vrlGCDQsGfGK/aKl+BPWD5rwT11bviJHLYInzozRRs0V0mDgRV3jX5w3lCoS4k60HVLWuECKPa1ped6/Wj6KX45yKXPRNBtYTbK9seySc2qapk59F0B1JFD82eYNc6QBVvKZE8sU6B1YWa0eUOGWjLqPcs9KnRHZi3R+CTX/vyLM2z7iLPL4kJfhrixfTu7VVejVL+oGVxcZ</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>
