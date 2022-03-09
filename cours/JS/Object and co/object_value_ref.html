@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ref or value</title>
+    </head>
+    <body>
+        <script>
+            // console.log("===Argument de type primitif===");
+            // let val = 5;
+            // console.log(val);
+            // func01(val);
+            // console.log(val);
+
+            // function func01(param) {
+            //     console.log("Dans fonction : " + param);
+            //     param += 10;
+            //     console.log("Dans fonction : " + param);
+            // }
+        </script>
+
+        <script>
+            // console.log("===Argument de type Objet: Ref===");
+
+            // function func02(param) {
+            //     console.log("Dans fonction : ");
+            //     console.log(param);
+            //     param = { nom: "anne", age: 30 };
+            //     console.log("Dans fonction : ");
+            //     console.log(param);
+            // }
+            // let valObj = { nom: "paul", age: 25 };
+            // console.log(valObj);
+            // func02(valObj);
+            // console.log(valObj);
+        </script>
+
+        <script>
+            console.log(
+                "===Argument de type Objet: Attribut de la reference==="
+            );
+
+            function func03(param) {
+                console.log("Dans fonction : ");
+                console.log(param);
+                param.nom = "Anne-dominique";
+                param.age = 48;
+                console.log("Dans fonction : ");
+                console.log(param);
+            }
+            let valObj2 = { nom: "martine", age: 50 };
+            console.log(valObj2);
+            func03(valObj2);
+            console.log(valObj2);
+        </script>
+    </body>
+</html>

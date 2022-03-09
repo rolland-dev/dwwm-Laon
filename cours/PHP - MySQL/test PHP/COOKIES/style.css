@@ -1,0 +1,40 @@
+.droit{
+    display: inline;
+    float: right;
+    list-style: none;
+}
+.row, .menu,.footer,.global,.gauche, .descriptif{
+    border: 1px solid black;
+}
+
+.descriptif{
+    margin: 15px;
+}
+
+.cRouge, .tRouge{
+    width: 10px;
+    height: 20px;
+    background-color: red;
+}
+.cBleu, .tBleu{
+    width: 10px;
+    height: 20px;
+    background-color: blue;
+}
+.cVert, .tVert{
+    width: 10px;
+    height: 20px;
+    background-color: green;
+}
+.gauche{
+    align-items: space-around;
+}
+img{
+    margin: 5px;
+    
+}
+
+.image>img{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function numS(param) {
+                this.val = param;
+                this.toTxt = function(){
+                    console.log('la valeur du param est ' + this.val);
+                };
+            }
+
+            let dix = new numS(10);
+            console.log(dix);
+
+            dix.age = 33;
+            console.log(dix);
+            
+            // creation d'une nouvelle instance il n'ya pas de proprieté age
+
+            let six = new numS(6);
+            console.log(six);
+
+            // ajout d'une proprieté email par prototype
+        
+            numS.prototype.email = 'none@gmail.lulu';
+
+            console.log(dix);// Alerte à la console
+            console.log(dix.email);
+            console.log(six);
+            console.log(six.email);
+
+            let cinq = new numS(5);
+            console.log(cinq);
+            console.log(cinq.email);
+
+        </script>
+    </body>
+</html>

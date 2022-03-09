@@ -1,0 +1,82 @@
+body
+{
+    width: 800px;
+    background-image: url("images.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header
+{
+    display: flex;
+    flex: 1;
+    background-color: rgb(129, 123, 189);
+    border-block-style: 1px solid rgb(129, 123, 189);
+    border-radius: 15px;
+    justify-content: center;
+}
+
+nav
+{
+    display: flex;
+    
+}
+
+.box
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(155, 129, 96);
+    width: auto;
+    padding: 10px;
+}
+.box > p
+{
+    width:500px;
+}
+
+/* mise en forme du menu */
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+li 
+{
+    float: left; /*pour IE*/
+    border-left:1px solid black;
+}
+ul li a 
+{
+    display:block;
+    float: left;   
+    width:100px;
+    line-height:50px; /*hauteur de l'image de fond*/
+    background:black url(images/noir-1.png) repeat-x;
+    color:#DCDCDC;
+    text-decoration:none;
+    text-align:center;
+}
+ul li a:hover
+{
+    color: rgb(38, 226, 13);
+}
+
+
+.box h3
+{
+    text-align: center;
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: darkseagreen;
+    text-align: center;
+}
+footer > p
+{
+    flex:1;
+    justify-content: center;
+}

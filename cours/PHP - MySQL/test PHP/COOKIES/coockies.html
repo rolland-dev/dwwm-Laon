@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookie</title>
+  </head>
+  <body>
+    <h1>Cette page crée un cookie</h1>
+    <script>
+      function creerCookie(nom, valeur, nbreJours) {
+        var dateFinCookie = new Date();
+        dateFinCookie.setTime(
+          dateFinCookie.getTime() + 24 * nbreJours * 60 * 60 * 1000
+        );
+        var expires = "expires=" + dateFinCookie.toUTCString();
+        document.cookie = nom + "=" + valeur + ";" + expires + ";path=/";
+      }
+
+
+      function effacerCookie(nom) {
+        var dateFinCookie = new Date();
+        dateFinCookie.setTime(dateFinCookie.getTime() - 1);
+        var expires = "expires=" + dateFinCookie.toUTCString();
+        document.cookie = nom + "=nimps;" + expires + ";path=/";
+      }
+
+      creerCookie("paul", "Val3", 30);
+      creerCookie("Laon","Val2", 10);
+    //   effacerCookie("paul");
+
+
+      function lieCookie(nom) {
+        var nameEgal = nom + "="; // je récupère le nom du cookies et =
+        var toutCookie = document.cookie.split(';'); // je sépare mes cookie dans un tableau
+
+        for(var i=0;i < toutCookie.length;i++) {
+            var tampon = toutCookie[i].trim(); // enlève les espaces
+
+            if (tampon.indexOf(nameEgal) == 0){ // si cookie trouvé par rapport au nom
+                return (tampon.substring(nameEgal.length)); // je prends la valeur juste aprés mon nom=
+            }
+        }
+        return null;
+    }
+
+    var retour = lieCookie("Laon");
+    console.log(retour);
+
+    </script>
+  </body>
+</html>

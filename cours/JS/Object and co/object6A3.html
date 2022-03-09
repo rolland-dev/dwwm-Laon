@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class numS {
+                constructor (param){
+                    this.val = param;
+                }
+                toTxt (){
+                    console.log('la valeur ' + this.val + ' en texte est : ' + 'blabla...');
+                }
+            }
+
+            let dix = new numS(10);
+            dix.toTxt();
+
+            numS.prototype.toTxt = function(){
+                console.log('la valeur ' + this.val + ' en texte est : ' + 'Nouvelle version...');
+            };
+            dix.toTxt();
+          
+            numS.prototype.toTxt = function(){
+                console.log('la valeur ' + this.val + ' en texte est : ' + 'encore une bidouille...');
+            };
+            dix.toTxt();
+
+
+            let six = new numS(6);
+            six.toTxt();
+
+
+            dix.toTxt = function(){
+                console.log('la valeur ' + this.val + ' en texte est : ' + 'Derniere version...');
+            };
+            dix.toTxt();
+
+            six.toTxt();
+        </script>
+    </body>
+</html>

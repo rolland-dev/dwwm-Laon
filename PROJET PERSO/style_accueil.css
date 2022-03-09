@@ -1,0 +1,92 @@
+
+
+/*  Définition de la page principale */
+.page1
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+/*  Définition de la page principale avec les articles */
+.page1 > div
+{
+    flex-direction: column;
+}
+
+/*  Premier article */
+.article1
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    height: 220px;
+    background-color: salmon;
+}
+
+.aside1
+{
+    background-color: rgb(243, 152, 142);
+
+}
+
+/* Second article */
+.article2
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    height: 220px;
+    background-color: rgb(204, 107, 96);
+
+}
+
+.aside2
+{
+    background-color: rgb(151, 71, 63);
+}
+
+/* Images pour les pub */
+.pub
+{
+    width: 200px;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    justify-content: start;
+}
+.pub1
+{
+    width: 180px;
+    height: 180px;
+    background-image: url("images2_b.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.pub2
+{
+    width: 180px;
+    height: 180px;
+    background-image: url("images3.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.pub3
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("archergg_b.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.accueil
+{
+    background-color: rgb(131, 128, 128);
+    border-radius: 10px;
+}
+h2
+{
+    background-color: rgb(131, 128, 128);
+}

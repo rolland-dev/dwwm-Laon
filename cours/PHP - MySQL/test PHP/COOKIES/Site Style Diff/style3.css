@@ -1,0 +1,54 @@
+body
+{
+    text-align: center;
+
+}
+
+h1
+{
+    color: yellow;
+    text-decoration: underline;
+    
+}
+
+div p
+{
+    color: red;
+}
+
+div > div > p
+{
+    color: green;
+}
+
+div > ul
+{
+    color: red;
+}
+
+div
+{
+    color: blue;
+}
+
+p
+{
+    color: red;
+}
+
+div + div + div + div + p + div > ul
+{
+    color: green;
+} 
+
+div + div + div > p
+{
+    color: green;
+}
+
+div + div + div >ul
+{
+    color: blue;
+    font-family: 'Indie Flower', cursive;
+    font-variant: normal;
+}

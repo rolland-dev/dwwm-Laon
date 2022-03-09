@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>new or not new</title>
+    </head>
+    <body>
+        <script>
+            function Group() {
+                this.titre = "D.W.W.M. Laon";
+            }
+
+            var css = new Group(); 
+            alert(css.titre);
+            alert("la var 'titre' est inconnue dans l'espace GLOBAL   " + (window.titre === undefined)); 
+
+            var css2 = Group(); 
+            alert("la var 'titre' est inconnue dans l'espace GLOBAL   " + (window.titre === undefined)); 
+            alert(window.titre);
+
+            alert(css2.titre); 
+        </script>
+    </body>
+</html>

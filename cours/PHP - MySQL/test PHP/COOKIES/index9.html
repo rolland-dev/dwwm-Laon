@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>index9</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+  <body>
+      <div class=container-fluid">
+        <div class="row col-12">
+            <div class="droite col-8 m-3 p-0">
+                <div class="menu col-12">
+                    <span>DWWM</span>
+                    <span class="droit">
+                        <a href="A Propos" class="ar">A Propos</a>
+                        <a href="Contact" class="ar">Contact</a>
+                        <a href="Connexion" class="ar">Connexion</a>
+                        <a href="Aide" class="ar">Aide</a>
+                    </span>
+                </div>
+                <div class="row col-12 m-0 p-0">
+                    <div class="image col-5 m-4 p-0">
+                        <img src="image1.jpg" >
+                    </div>
+                    <div class="descriptif col-5 m-4 p-2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem quas inventore veritatis voluptate sit eaque dolorum! Reiciendis dolore itaque expedita amet aperiam delectus. Laborum asperiores magnam reprehenderit nemo dolores architecto cumque est, qui illo laudantium exercitationem sit voluptatum fugiat.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer col-12 text-center">
+                    <p>CopyRight(Me)</p>
+                </div>
+            </div>
+
+            <div class="gauche col-3 m-3 p-1">
+                <p>Couleur</p>
+                <span>titre : </span>
+                <button type="button" class="cRouge" onclick="cR('red')"></button>
+                <button type="button" class="cBleu" onclick="cR('blue')"></button>
+                <button type="button" class="cVert" onclick="cR('green')"></button>
+                <p></p>        
+                <span>text : </span>
+                <button type="button" class="tRouge"  onclick="tR('red')"></button>
+                <button type="button" class="tBleu"  onclick="tR('blue')"></button>
+                <button type="button" class="tVert" onclick="tR('green')"></button>
+
+                <p></p>
+                <p class="icone m-2 p-auto">Image</p>
+                <img src="image2.jpg" alt="2"  id="img2" onclick="changeImg('image2.jpg','#img2',1)">
+                <img src="image3.jpg" alt="3"  id="img3" onclick="changeImg('image3.jpg','#img3',2)">
+                <img src="image4.jpg" alt="4"  id="img4" onclick="changeImg('image4.jpg','#img4',3)">
+                <img src="image5.jpg" alt="5"  id="img5" onclick="changeImg('image5.jpg','#img5',4)">
+            </div>
+        </div>
+
+        
+        <script>
+
+            // tableau images
+            let tabImage=["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg"];
+
+            // tableau avec les différentes descriptions
+            let textDesc=["Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore omnis voluptates officiis quasi inventore earum accusamus libero ratione facere provident","Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, maxime fugit sapiente praesentium accusamus unde!","Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi voluptatibus nisi recusandae numquam unde iure itaque facere nulla ipsum sed porro odio aspernatur aliquid voluptatem sapiente qui inventore, officia repellat.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem aliquam laboriosam!"];
+    
+            // si titre change de couleur
+            function cR(couleur){
+                document.querySelector(".menu").style.color=couleur;
+                document.querySelectorAll(".ar").style.color=couleur;
+            }
+
+            // si texte change de couleur
+            function tR(couleur){
+                document.querySelector(".descriptif").style.color=couleur;
+            }
+
+            // changement de l'image
+            function changeImg(image,img,nbr){
+                // récupération de la grande img
+                var imageDepart = document.querySelector(".image").innerHTML; 
+                // on change la grande img
+                document.querySelector(".image").innerHTML="<img src="+ image +">";
+                // on change de texte
+                document.querySelector(".descriptif").innerHTML="<p>"+ textDesc[nbr-1]+ "</p>";
+                // on mets la grande img dans choix des images
+                console.log(img + " >> " +"<img src="+ tabImage[nbr-1] +">");
+                document.querySelector("img").innerHTML = "<img src="+ tabImage[nbr-1] +">";
+                
+            }
+
+        </script>
+      </div>
+
+        
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

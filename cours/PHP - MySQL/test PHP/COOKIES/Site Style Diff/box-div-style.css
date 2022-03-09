@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  width: 200px;
+  height: 120px;
+  background-color: black;
+  float: left;
+  border-top: 10px solid red;
+  border-right: 10px solid green;
+  box-sizing: content-box;
+}
+.box1 {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.box2 {
+  margin-top: 100px;
+}
+
+.box3 {
+  margin-top: 150px;
+}
+
