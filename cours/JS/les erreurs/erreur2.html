@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try {
+            prenom
+            alert('Bonjour');
+        } catch (err) {
+            alert('Erreur rencontrée. ' +
+                '\nNom de l\'erreur : ' + err.name +
+                '\nMessage d\'erreur : ' + err.message +
+                '\nEmplacement de l\'erreur : ' + err.stack);
+        }
+        alert('Ce message s\'affiche correctement, car le script continue');
+
+        // on utilise des propriété de err pour afficher certaines choses comme name, message, stack...
+        // ATTENTION selon le navigateur certaines propriété ne fonctionne pas
+    </script>
+</body>
+
+</html>
