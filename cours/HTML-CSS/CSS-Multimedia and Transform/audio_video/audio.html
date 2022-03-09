@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Gestion de l'audio</h1>
+    <div>
+        <p>Avec le html5, les seuls formats standardisés sont :</p>
+        <ul>
+            <li>mp3</li>
+            <li>ogg</li>
+            <li>wav</li>
+        </ul>
+        <p>Seul le mp3 est accepté par tous les navigateurs.</p>
+        <p>attributs : controls, autoplay, loop,muted</p>
+        <p>child: source : src et type</p>
+    </div>
+    <div>
+        <p>Exemple:</p>
+        <audio controls autoplay>
+            <source src="better.mp3" type="audio/mpeg">
+            <source src="better.ogg" type="audio/ogg">
+            Ce message s'affiche si le navigateur ne gère pas la balise audio
+        </audio>
+    </div>
+
+</body>
+</html>

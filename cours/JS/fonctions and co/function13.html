@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carré en une boucle</title>
+    </head>
+    <body>
+        <br />
+
+        <script>
+            let n = 8;
+            document.write("<pre>");            
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= n; j++) {
+                    if (i == 1 || i == n || j == 1 || j == n) {
+                        document.write("X");
+                    } else {
+                        document.write(" ");
+                    }
+                }
+                document.write("<br>");
+            }
+            document.write("</pre>");
+        </script>
+
+        <br />
+
+        <script>
+            document.write("<pre>");
+            for (let i = 1; i <= n * n; i++) {
+                if (i <= n || i > n * (n - 1) || i % n == 1 || i % n == 0) {
+                    document.write("X");
+                } else {
+                    document.write(" ");
+                }
+                if (i % n == 0) {
+                    document.write("<br>");
+                }
+            }
+            document.write("</pre>");
+        </script>
+    </body>
+</html>

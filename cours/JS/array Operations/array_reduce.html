@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+
+        let arr = [  1,  2,  3,  4,  5,  6];
+        console.log(arr);
+        let res1 = arr.reduce((total,i)=>{
+            total += i;
+            return total;
+        },0)
+        console.log(`Tatal des elements du tableau : ${res1}`);
+
+        res2 = arr.reduce((nbre,i)=>{
+            if( i % 2 == 0 )
+                nbre ++;
+            return nbre;
+        },0)
+        console.log(`Nombre d'elements 'pair' : ${res2}`);
+
+
+        res3 = arr.reduce((moy,i) => {
+            moy += i/arr.length;
+            return moy;
+        },0)
+        console.log(`Moyenne des elements du tableau : ${res3}`);
+    </script>
+</body>
+</html>

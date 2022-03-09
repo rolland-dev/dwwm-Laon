@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    padding: 5px 10px;
+    color: #e44d26;
+    border: 2px solid #e44d26;
+    box-shadow: 4px 4px 8px #e44d26;
+}
+
+a{
+    color: #e44d26;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonction 11</title>
+    <script>
+        function doDW(msg) {
+            document.write(msg);
+        }        
+        function salut(s) {
+
+            if (s == "m" || s == "M"){
+                return "Monsieur";
+            }
+            else if (s == "f" || s == "F")
+                return "Madame";
+            else
+                return "";
+        }
+
+        // function salut(s) {
+        //     let myret = "";
+        //     if (s == "m" || s == "M"){
+        //         myret =  "Monsieur";
+        //     }
+        //     else if (s == "f" || s == "F")
+        //         myret = "Madame";            
+        //     return myret;
+        // }        
+    </script>
+</head>
+
+<body>
+    Bonjour <script>doDW(salut("m"))</script>  Marc.<br>
+    Bonjour <script>doDW(salut("f"))</script>  Martine.<br>
+    Bonjour <script>doDW(salut("X"))</script>  claude.<br>
+
+</body>
+
+</html>

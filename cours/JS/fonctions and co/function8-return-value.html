@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonction 8</title>
+    <script>
+        function doDW(msg) {
+            document.write(msg);
+        }
+        function doDWn(msg) {
+            document.write(msg + "<br>");
+        }
+        function somme(x, y, z) {
+            let som = x + y + z;
+            return (som);
+        }
+        function moyenne(x, y, z) {
+
+            return ((x + y + z) / 3);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <script>
+        x=4;
+        y=5;
+        z=10;
+
+        let m1;
+        m1 = somme(x, y, z);
+        doDW("la somme de (" + x + "," + y +"," + z + ") est " + m1 );
+        m1 = somme(15, 17, 10);
+        doDW("la somme de (15,17,10) est " + m1 );
+    </script>
+    <hr>
+    <script>
+        let moy1;
+        moy1 = moyenne(5, 6, 7);
+        doDW("la moyenne de (5,6,7) est " + moy1);
+        moy1 = moyenne(15, 17, 10);
+        doDW("la moyenne de (15,17,10) est " + moy1);
+    </script>
+    <hr>
+
+</body>
+
+</html>

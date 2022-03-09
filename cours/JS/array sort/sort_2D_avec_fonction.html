@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tri des nombres</title>
+</head>
+
+<body>
+    <script>
+        var str;
+        var tab1 = [[19,1], [72,4], [33,88], [5,25],[33,88]];
+        
+        str = tab1.join("  _  ");
+        document.write("Avant le tri : <br>" + str);
+        document.write("<br><br>");
+
+        var tab2 = tab1.sort();
+        str = tab2.join("  _  ");
+        document.write("Apres le tri standard : <br>"+str);
+        document.write("<br><br>");
+
+        var tab3 = tab1.sort(tri_numerique);
+        str = tab3.join("  _  ");
+        document.write("Apres le tri avec une fonction : <br>" + str);
+        document.write("<br><br>");
+
+        function tri_numerique(a, b) {
+            if (a[0] < b[0]) {
+                return -1;
+            } 
+            else if (a[0] > b[0]) {
+                return 1
+            }
+            else {
+                if (a[1] < b[1]) {
+                    return -1;
+                }
+                else if (a[1] > b[1]){
+                    return 1
+                }
+                else {
+                    return 0;
+                }
+
+                
+            }
+        }
+    </script>
+</body>
+
+</html>

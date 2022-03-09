@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>portée des variables</title>
+    </head>
+    <body>
+        <script>
+            let nom = "Marc";
+            console.log("nom = " + nom);
+
+            testNom();
+
+            console.log("nom = " + nom);
+
+            function testNom() {
+                let nom;
+                console.log(nom);
+
+                nom = "Elsa";
+                console.log("nom = " + nom);
+            }
+        </script>
+    </body>
+</html>

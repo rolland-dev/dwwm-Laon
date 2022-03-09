@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reduce 2</title>
+    </head>
+    <body>
+        <script>
+            var Personnes = [
+                { nom: "Martine", married: false },
+                { nom: "Emmanuelle", married: true },
+                { nom: "Emilie", married: false },
+                { nom: "Coralie", married: true },
+                { nom: "Aurelie", married: false }
+            ];
+
+            function funcAgreg (resultat,person){
+                    var prop = person.married;
+                    if (!resultat[prop]) {
+                        resultat[prop] = [];
+                    }
+                    resultat[prop].push(person);
+                    return resultat;
+            }
+            var repartitionMarried = Personnes.reduce(funcAgreg, {} );
+
+            console.log(repartitionMarried);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+            // function funcAgreg (resultat,person){
+            //         resultat[person.married].push(person);
+            //         return resultat;
+            // }
+            // var repartitionMarried = Personnes.reduce(funcAgreg, {true:[],false:[]} );
+
+            // console.log(repartitionMarried);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function arrow</title>
+    <link rel="stylesheet" href="js_exemples.css" />
+</head>
+<body>
+    <div>
+        <p>
+            Il existe un moyen simple d'ecrire les fonctions expression. <br>
+            Ce sont les fonction arrow (flêche) : <br>
+
+            <pre>
+                let mafonction = (param1, para2, ... paramN) => expression
+            </pre>
+
+            Ceci crée une fonction qui prend les parametres de param1 à paramN, évalue l'expression et la retourne. <br>
+            <br>
+            C'est une façon courte d'ecrire :
+
+            <pre>
+                let mafonction = function (param1, para2, ... paramN)  {
+                    return expression;
+                };
+            </pre>
+            <br>
+            Exemple : <br>
+
+            <pre>
+
+                la version arrow est :
+
+                let prod = (a, b) => a * b;
+
+                la version expression est :
+
+                let prod = function(a, b) {
+                    return a * b;
+                };
+
+                alert( prod(3, 6) ); 
+
+            </pre>
+
+            Si il y a un seul parametre on peut omettre les parenthèses: <br>
+            <pre>
+                let mafonction = param1 => expression
+
+            </pre>
+            Si il n y a pas de parametre, les parenthèses sont obligatoires: <br>
+            <pre>
+                let mafonction = () => expression
+
+                exemple :
+
+                let bonjour = () => alert("Bonjour mon ami")
+            </pre>
+            Si le corps de la fonction est long i.e. plusieurs lignes, il faut entourer expression par des accolades et ajouter un return. <br>
+            <pre>
+                let mafonction = (param1,.. paramN) => {
+                    // code à exécuter
+                    return expression_result;
+                }
+            </pre>
+            Exemple
+        </p>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

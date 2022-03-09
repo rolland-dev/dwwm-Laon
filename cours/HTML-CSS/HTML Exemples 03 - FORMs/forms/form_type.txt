@@ -1,0 +1,9 @@
+form	        Définit un formulaire
+input	        Définit un champ de données pour l’utilisateur
+label	        Définit une légende pour un élément input
+textarea	    Définit un champ de texte long
+select	        Définit une liste de choix
+optgroup	    Définit un groupe d’options dans une liste
+option	        Définit une option dans une liste
+fieldset	    Permet de regrouper les éléments d’un formulaire en différentes parties
+legend	        Ajoute une légende à un élément fieldset

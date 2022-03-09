@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>hoisting</title>
+    </head>
+    <body>
+        <script>
+            z1 = "avant";
+            alert("z1 : " + z1);
+            var z1;
+        </script>
+
+
+
+        <script>
+            z2 = "avant";
+            alert("z2 : " + z2);
+            let z2;
+        </script>
+
+
+
+        <script>
+            alert("z3 : " + z3);
+            var z3 = "après";
+        </script>
+
+
+
+        <script>
+            alert("z4 : " + z4);
+            function z4() {
+                alert("fonction z4");
+            }
+        </script>
+
+
+
+        <script>
+            alert("z5 " + z5);
+            z5 = function() {
+                alert("fonction z5");
+            };
+        </script>
+
+
+
+        <script>
+            alert("z6 : " + z6);
+            function z6() {
+                alert("fonction z6");
+            }
+            var z6;
+        </script>
+
+
+
+        <script>
+            alert("z7 " + z7);
+            z7 = function() {
+                alert("fonction z7");
+            };
+            var z7;
+        </script>
+
+
+
+        <script>
+            var z8;
+            alert("z8 : " + z8);
+            function z8() {
+                alert("fonction z8");
+            }
+        </script>
+
+
+    </body>
+</html>

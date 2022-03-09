@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>produit et somme</title>
+    </head>
+    <body>
+        <script>
+            function doDW(msg) {
+                document.write(msg);
+            }
+
+            function myfunc(valeurN, opera = "+") {
+                let res;
+                if (opera == "+") {
+                    res = 0;
+                    for (let i = 1; i <= valeurN; i++) {
+                        res += i;
+                    }
+                } else {
+                    res = 1;
+                    for (let i = 1; i <= valeurN; i++) {
+                        res *= i;
+                    }
+                }
+                return res;
+            }
+        </script>
+
+        <script>
+            let n = 0, op = "";
+            while (n > 50 || n < 5) {
+                n = Number(prompt("Entrez une valeur entre 5 et 50 : "));
+            }
+            while (op != "+" && op != "*") {
+                op = prompt("Entrez l operateur :  (+ ou *) ");
+            }
+            doDW("Valeur de N : " + n+ "<br>")
+            doDW("Operateur : ''" + op+ "'<br>");
+            doDW("Resultat : "+myfunc(n, op) + "<br>");
+        </script>
+    </body>
+</html>

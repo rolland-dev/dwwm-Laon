@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonction 0</title>
+    <link rel="stylesheet" href="js_exemples.css" />
+
+    <div>
+        <p>
+
+            Souvent on veut exécuter une action plusieurs fois et/ou en plusieurs endroits d'un script.<br>
+            
+            Les fonctions permettent d'éviter les répétitions. <br>
+
+            Les fonctions permettent aussi de corriger un bug en un seul endroit, de changer l'implémentation interne sans changer les appels <br> et enfin de réutiliser une portion de code dans d'autres scripts ou projets... <br><br>
+
+            Vous connaissez déjà des fonctions : alert, prompt, confirm et write...  :           
+
+            <pre>
+                Syntaxe :
+
+                function nomDeLaFonction () {
+                    ...Corps de la fonction...
+                    ...Code à exécuter...
+                }
+
+                function nomDeLaFonction (param1, param2..., paramN) {
+                    ...Corps de la fonction...
+                    ...Code à exécuter...
+                }
+
+                l'appel (l'exécution) se fait avec le nom de la fonction et les parenthèses.
+            </pre>
+        </p>
+    </div>
+    <h2>Exemple:</h2>
+    <pre>
+        
+
+        function maFonction() {
+            document.write("bienvenue au DWWM Club");
+        }
+        maFonction();
+        maFonction();
+        maFonction();
+    </pre>
+    <script>
+        function maFonction() {
+            document.write("bienvenue au DWWM Club<br>");
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <!-- suite de la page html -->
+
+    <script>
+        maFonction();
+        maFonction();
+        maFonction();
+    </script>
+</body>
+
+</html>

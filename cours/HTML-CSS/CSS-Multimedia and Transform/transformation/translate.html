@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transformation - translate</title>
+    <style>
+        *, html {
+            padding: 0;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+
+        .d1{
+            width: 480px;
+            height: 220px;
+            background-color: green;
+            border: 1px solid #000;
+            
+            
+            transition:2s;
+            
+            
+        }
+        .d1:hover{
+            transform: translate(50px, 50px);
+        }
+        .trans {
+            transform: translate(450px, 0px);
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transformation</h1>
+    <h2>translation</h2>
+    <div class="d1">
+        Lorem ipsum dolor sit amet. <br>
+        Autem modi <img src="../video background/img/videoBackground2.jpg" width="200" height="120">sit suscipit dignissimos? <br>
+        Quam nulla maiores quidem autem. <br>
+    </div>
+    <div class="d1 trans">
+        Lorem ipsum dolor sit amet. <br>
+        Autem modi <img src="../video background/img/videoBackground2.jpg" width="200" height="120">sit suscipit dignissimos? <br>
+        Quam nulla maiores quidem autem. <br>
+    </div>
+</body>
+</html>

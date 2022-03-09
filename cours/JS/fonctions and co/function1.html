@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonction 1</title>
+    <div>
+        <p>
+            L'avantage d'une fonction c'est de pouvoir l'appeler plusieurs fois. <br>
+            Si on veut changer le comportement -( la logique )- on le fait à un seul endroit.
+        </p>
+    </div>
+    <script>
+        function doBloc() {
+            document.write("<p class='color1'>bloc traitement num 1</p>");
+            document.write("<p class='color2'>bloc traitement num 2</p>");
+        }        
+    </script>
+    <style>
+        .color1{
+            color:green;
+        }
+        .color2{
+            color:rgb(255, 0, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    bonjour
+    <script>doBloc();</script>
+    ceci est une nouvelle ligne
+    <script>doBloc();</script>
+    encore une autre
+    <script>doBloc();</script>
+    et enfin une autre
+    <script>doBloc();</script>
+</body>
+
+</html>

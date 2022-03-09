@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fonction var</title>
+    </head>
+    <body>
+        <script>
+            function sapinH(num, motif) {
+                let i, j, k;
+                k = num -1;
+                for (i = 1; i <= num; i = i + 1) {
+                    for (j = 1; j <= k; j++) {
+                        document.write(" ");
+                    }
+                    for (j = 1; j <= 2 * i - 1; j++) {
+                        document.write(motif);
+                    }
+                    document.write("<br>");
+                    k--;                    
+                }
+            }
+
+            function sapinB(num, motif) {
+                let i, j, k;
+                k = 1;
+                for (i = num-1; i >=1; i = i - 1) { 
+                    for (j = 1; j <= k; j++) {
+                        document.write(" ");
+                    }
+                    for (j = 1; j <= 2 * i - 1; j++) {
+                        document.write(motif);
+                    }
+                    document.write("<br>");
+                    k++;                    
+                }
+            }
+
+            function sapin(num, motif){
+                let i, j, k;
+                
+                k = num - 1;
+                for (i = 1; i <= num; i = i + 1) {
+                    for (j = 1; j <= k; j++) {
+                        document.write(" ");
+                    }
+                    for (j = 1; j <= 2 * i - 1; j++) {
+                        document.write(motif);
+                    }
+                    document.write("<br>");                    
+                    k--;
+                }
+
+                k = 1;
+                for (i = num-1; i >=1; i = i - 1) { 
+                    for (j = 1; j <= k; j++) {
+                        document.write(" ");
+                    }
+                    for (j = 1; j <= 2 * i - 1; j++) {
+                        document.write(motif);
+                    }
+                    document.write("<br>");
+                    k++;
+                }                
+            }
+
+
+            // function sapinASens(num, motif,sens){
+            //     let i, j, k;
+            //     k = (num-1) * (sens+1)/2;
+            //     minI = (2-num) * sens/2 + (num/2) + (1-sens)/2;
+            //     maxI = (num-1) * sens/2 + (num-1)/2 + (1+sens)/2;
+
+            //     // alert("minI = "+minI + "  maxI = " + maxI + "  k = " + k);
+
+            //     for(i= minI; i != maxI; i = i + sens){
+            //         for (j = 1; j <= k; j++) {
+            //             document.write(" ");
+            //         }
+            //         for (j = 1; j <= 2 * i - 1; j++) {
+            //             document.write(motif);
+            //         }
+            //         document.write("<br>");
+            //         k = k - sens;
+            //     }
+            // }
+
+            function sapinASens(num, motif,sens){
+                let i, j, k;
+                k = (num-2) * sens/2 + num/2;
+                minI = (2-num) * sens/2 + (num/2) ;
+                maxI = (num+1) * (sens+1)/2;
+
+                alert("minI = "+minI + "  maxI = " + maxI + "  k = " + k);
+
+                for(i= minI; i != maxI; i = i + sens){
+                    for (j = 1; j <= k; j++) {
+                        document.write(" ");
+                    }
+                    for (j = 1; j <= 2 * i - 1; j++) {
+                        document.write(motif);
+                    }
+                    document.write("<br>");
+                    k = k - sens;
+                }
+            }
+
+
+            function sapinA2Sens(num, motif){
+                let i, j, k;
+                for(sens = 1; sens >=-1; sens-=2){
+                    k = (num-1) * (sens+1)/2;
+                    minI = (2-num) * sens/2 + (num/2) + (1-sens)/2;
+                    maxI = (num-1) * sens/2 + (num-1)/2 + (1+sens)/2;           
+  
+                    for(i= minI; i != maxI; i = i + sens){
+                        for (j = 1; j <= k; j++) {
+                            document.write(" ");
+                        }
+                        for (j = 1; j <= 2 * i - 1; j++) {
+                            document.write(motif);
+                        }
+                        document.write("<br>");
+                        k = k - sens;
+                    }
+                }
+            }
+        </script>
+   
+                        
+        <br>
+        <script>
+        let nbre = 8;
+        document.write("<pre>");
+        sapinH (nbre,'X');
+        sapinB (nbre,'X');
+        document.write("</pre>");
+
+        // document.write("<pre>");
+        // sapin (nbre,'+',1);
+        // document.write("</pre>");
+
+        document.write("<pre>");
+        sapinASens (nbre,'#',1);
+        sapinASens (nbre,'#',-1);
+        document.write("</pre>");
+
+
+        // document.write("<pre>");
+        // sapinA2Sens(nbre,"@");
+        // document.write("</pre>");
+        </script>
+    </body>
+</html>

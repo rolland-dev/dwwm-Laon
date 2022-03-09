@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display</title>
+    <style>
+        .gris {
+            background-color: #cdcdcd;
+        }
+
+        #d2 {
+            visibility: hidden; /*  element caché mais sa place dans le flux est conservée */
+            /* display:none; */ /*  element caché mais sa place dans le flux est perdu */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="gris">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestiae nulla, commodi vero quae magni sunt
+                facilis? Delectus, quia eius.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestiae nulla, commodi vero quae magni sunt
+                facilis? Delectus, quia eius.</p>
+        </div>
+        <div id="d2" class="gris">
+            <h2>Titre 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus earum debitis sapiente eaque,
+                repellendus
+                eius repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus earum debitis sapiente eaque,
+                repellendus
+                eius repudiandae.</p>
+        </div>
+        <div class="gris">
+            <h2>Titre 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus earum debitis sapiente eaque,
+                repellendus
+                eius repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus earum debitis sapiente eaque,
+                repellendus
+                eius repudiandae.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

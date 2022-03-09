@@ -1,0 +1,111 @@
+#main_container {
+  display: flex;
+}
+header {
+  width: 360px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.ss_main {
+  margin-left: 360px;
+  padding-top: 100px;
+  display: flex;
+  flex-shrink: 1;
+  border-left: 1px solid rgb(138, 158, 88);
+}
+.experiences,
+.formation {
+  width: 100%;
+  margin: 0;
+}
+.h2_skills {
+  display: none;
+}
+.skills {
+  border-width: 0 0 2px 0;
+  margin: 0 0 15px 0;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 360px;
+  padding-right: 360px;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.skills .d1 {
+  width: 40%;
+}
+.xd1 {
+  width: 50%;
+}
+.xde1 .ed1 {
+  width: 100%;
+}
+
+/* #region languages */
+.languages {
+  display: flex;
+  flex-direction: row;
+}
+.languages .d1 {
+  border-radius: 0;
+  height: 88px;
+  border: none;
+}
+.languages .d2 {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 0;
+  color:rgb(138, 158, 88);
+  padding-top: 55px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-weight: 500;
+}
+
+.fr {
+  background: url("./img/flag_fr.gif");
+}
+.en {
+  background: url("./img/flag_en.gif");
+}
+.es {
+  background: url("./img/flag_sp.gif");
+}
+.ru {
+  background: url("./img/flag_ru.gif");
+}
+/* #endregion */
+
+
+/* #region hauteur rikiki*/
+@media (max-height: 576px) {
+  .photo img {
+    border-radius: 25%;
+    width: 35%;
+    height: auto;
+    padding-top: 5px;
+  }
+
+  .identity p {
+    font-size: 1.1em;
+  }
+}
+@media (max-height: 400px) {
+  .photo img {
+    border-radius: 25%;
+    width: 25%;
+    height: auto;
+    padding-top: 5px;
+  }
+
+  .identity p {
+    font-size: 0.85em;
+  }
+}
+/* #endregion */

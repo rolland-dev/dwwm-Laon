@@ -1,0 +1,302 @@
+/* POUR ECRAN SUPERIEUR A 1024 */
+*
+{
+    box-sizing: border-box;
+}
+
+/* mise en page générale */
+body
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: coral;
+}
+main
+{
+    display: flex;
+}
+
+/* menu de gauche */
+.gauche
+{
+    position: fixed;
+    display: flex;
+    width: 360px;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/* Photo et nom */
+.identite
+{
+    background-color: rgb(212, 121, 56);
+    padding: 15px;
+    border-radius: 10px;
+}
+img /* arrondir image */
+{
+    overflow:hidden;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:100px;
+    width:180px;
+    height:180px;
+}
+/* contact et metier */
+.contact
+{
+    background-color: rgb(216, 109, 70);
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Info bulle */
+.info
+{
+    width: 120px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.bulle
+{
+    transform: scale(0) rotateX(-800deg);
+    position: absolute;
+    background-color: indianred;
+    color: lightblue;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 0px 0.5px rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(255, 255 , 255, 0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transition: 1s;
+}
+
+.bulle::before
+{
+    content: '';
+    position: absolute;
+    border-bottom-color: 8px solid rgb(204, 115, 115);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 10px;
+}
+.contact .info:hover >.bulle
+{
+    transform: scale(1) rotateZ(0);
+}
+
+/* langues */
+.langues
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(196, 153, 97);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+.langues>div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fr, .en
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+.fr>div, .en>div
+{
+    margin-top: 10px;
+}
+.progress_francais { 
+    width: 30px;
+    height: 30px;
+    background-image: url("france30x30.png");
+    text
+}
+.fr::after
+{
+    content:'98%';
+}
+
+.progress_anglais { 
+    width: 30px;
+    height: 30px;
+    background-image: url("anglais30x30.png");
+}
+.en::after
+{
+    content:'40%';
+}
+
+/* partie de droite */
+.droite
+{
+    left: 360px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+/* experiences */
+
+.experience
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(182, 136, 76);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    margin-left: 330px;
+    width: 50%;
+}
+
+/* formations */
+.formation
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 119, 75);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    /* margin-top: 200px; */
+    width: 50%;
+}
+
+/* competence mise en forme */
+.competence
+{
+    position: fixed;
+    top: 0px;
+    left: 360px;
+    height: 200px;
+    right: 0;
+    background-color: burlywood;
+}
+.competence div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+.one, .two
+{
+    flex-direction: column;
+}
+.html, .css, .js, .php
+{
+    display: flex;
+    flex-direction: row;
+}
+.html>div, .css>div, .js>div, .php>div
+{
+    margin-top: 16px;
+    margin-right: 15px;
+}
+.progress_html { 
+    width: 300px;
+    height: 24px;
+    background-color: #d14747;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    margin-top: 16px;
+    position: relative;
+}
+.progress_html:before { 
+    content: '..90 %';
+    text-align: right;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 270px; /* 90%*/
+    height: 24px;
+    background: rgba(241, 79, 79, 0.5);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+.progress_CSS { 
+    width: 310px;
+    height: 24px;
+    background-color: #d14747;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    position: relative;
+}
+.progress_CSS:before { 
+    content: '..90 %';
+    text-align: right;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 270px; /* 90% */
+    height: 24px;
+    background: rgba(167, 58, 58,0.5);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+.progress_JS { 
+    width: 300px;
+    height: 24px;
+    background-color: #d14747;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    position: relative;
+}
+.progress_JS:before { 
+    content: '..50 %';
+    text-align: right;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 150px; /*50% */
+    height: 24px;
+    background: rgba(243, 137, 137, 0.5);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+.progress_PHP { 
+    width: 300px;
+    height: 24px;
+    background-color: #d14747;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    position: relative;
+}
+.progress_PHP:before { 
+    content: '..65 %';
+    text-align: right;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 195px; /*65%*/
+    height: 24px;
+    background: rgba(136, 89, 89, 0.5);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}

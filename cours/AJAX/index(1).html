@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Médiathèque - Ajax -JSON</title>
+
+    <!-- style -->
+    <style>
+       
+      td, tr{
+        border: 1px solid black;
+        padding: 20px;
+      }
+
+    </style>
+  </head>
+  <body onload="lireChanteurs()">
+    <!-- 
+
+        créer un select qui se remplit au chargement de la page par 
+        les noms des chenteurs issus du fichier : chanteurs.json
+        et un bouton 'chercher'
+
+        ajouter un événement sur ce bouton 'chercher' tel que:
+
+        au choix d'un chanteur dans la liste déroulante, la liste de ses chansons et leurs durée
+        apparait  dans un tableau au centre de la page.
+        Si le chanteur n' a pas encore de chansion, afficher un message explicite.
+        les chansons sont dans le fichier : chansons.json
+
+      -->
+
+    <!-- Script JS -->
+
+    <form action="post">
+      <span>Choisirs un chanteur : </span>
+      <select id="chanteur"> </select>
+      <button type="button" onclick="rechercheSong()">Chercher</button>
+    </form>
+
+    <table id="demo"></table>
+
+    <script>
+      let long;
+
+      function lireChanteurs() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            if (this.status == 200) {
+              
+              for (var i = 0; i <= 11; i++) {
+                chanteurs = JSON.parse(this.responseText); 
+                document.getElementById("chanteur").innerHTML +='<option value="' + chanteurs[i].table.trim() + '">' + chanteurs[i].nom.trim() + "</option>";
+                long = chanteurs.length;
+              }
+            }
+          }
+         
+          rechercheSong();
+        };
+        xhr.open("GET", "chanteurs.json", true);
+        xhr.send();
+      }
+
+      function rechercheSong() {
+        let tt=0, test;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML ="";
+            chanson = JSON.parse(this.responseText);
+            
+            for (var i = 0; i <= chanson.length-1; i++) {
+                test = chanson[i].table;
+                if(document.getElementById("chanteur").value == test){
+                  document.getElementById("demo").innerHTML +='<tr><td>' + chanson[i].titre.trim() + '</td><td>' + chanson[i].longueur.trim() + '</td></tr>';
+                  tt=1;
+                }
+               
+              }
+              if(tt == 0 ){
+                  document.getElementById("demo").innerHTML="<tr><td> Aucune chanson de l'auteur pour le moment !!!</td></tr>" ;
+                }
+              
+          }  
+        };
+        
+        xhttp.open("GET", "chansons.json", true);
+        xhttp.send();
+        
+      }
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transform order</title>
+    <style>
+        *, html {
+            padding: 0;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .box1, .point1{
+            position: fixed;
+            top:50px;
+            left:50px;
+        }
+        .box2, .point2{
+            position: fixed;
+            top:250px;
+            left:50px;
+        }
+        .point1, .point2{
+            width: 15px;
+            height: 15px;
+            background-color: #000;
+            color:white;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 2px solid black;
+            transform-origin: 0 0;
+            transform: translate(100px, 0) rotate(45deg);
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 2px solid black;
+            transform-origin: 0 0;
+            transform: rotate(45deg) translate(100px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">A</div>
+    <div class="point1"> P1 </div>
+    
+    <div class="box2">B</div>
+    <div class="point2"> P2 </div>
+    
+
+
+</html>

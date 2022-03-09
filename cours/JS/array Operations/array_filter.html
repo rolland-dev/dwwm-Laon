@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Filter</title>
+    </head>
+    <body>
+        <script>
+            function myfiltre(a){
+                return a > 10;
+            }
+
+            let ar1 = [11, 8, 15, 6, 1, 19, 4, 16];
+            console.log(ar1);
+            
+            let ar1_good = ar1.filter(myfiltre);
+            console.log(ar1_good);
+        </script>
+    </body>
+</html>

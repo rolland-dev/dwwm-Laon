@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test of hover out !</title>
+    <style>
+        #button {
+            width: 320px;
+            margin: 48px auto;
+            text-align: center;
+            display: block;
+            position: relative;
+            color: rgb(67, 70, 90);
+            font-size: 22px;
+            border: 5px solid rgb(98, 49, 231);
+            border-radius: 10px;
+            background-color: rgb(127, 125, 233);
+            padding: 30px 5px;
+            transform: rotate(720deg);
+            transition: all 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        #button:hover {
+            transition: padding 0.2s, top 0.2s;
+            padding: 25px;
+            transform: rotate(0deg);
+            transition-delay: 0;
+            border: 5px solid rgb(7, 6, 107);
+            border-radius: 36px;
+            background-color: #7cc6e9;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a id="button" href="#">
+        hover moi
+    </a>
+
+
+</body>
+
+</html>

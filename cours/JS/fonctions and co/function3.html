@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fonction 3</title>
+    <script>
+        function doRedP() {
+            document.write("<p style='color:yellow;'>");
+        }
+        function doGreenP() {
+            document.write("<p style='color:green;'>");
+        }
+        function doEndP() {
+            document.write("</p>");
+        }
+        function doHR() {
+            document.write("<hr width='90%'>");
+        }    
+    </script>
+</head>
+
+<body>
+    <h1>Titre ici</h1>
+    <script>
+        for (let i = 1; i <= 7; i++) {
+            if (i % 2 == 0) {
+                doRedP();
+                document.write("paragraphe paire");
+            } else {
+                doGreenP();
+                document.write("paragraphe impaire");
+            }
+            doEndP();            
+            doHR();
+        }
+    </script>
+
+</body>
+
+</html>

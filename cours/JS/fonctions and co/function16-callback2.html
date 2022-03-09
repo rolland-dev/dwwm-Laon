@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>function call-back</title>
+    </head>
+    <body>
+        <script>
+            add = function(a, b) {
+                return a + b;
+            };
+            mul = function(a, b) {
+                return a * b;
+            };
+
+            function doOpera(para1, para2, func) {
+                return func(para1, para2);
+            }
+
+            x1 = doOpera(3, 5, add);
+            x2 = doOpera(3, 5, mul);
+
+            document.write("3 + 5 = " + x1 + "<br>");
+            document.write("3 * 5 = " + x2 + "<br>");
+        </script>
+    </body>
+</html>

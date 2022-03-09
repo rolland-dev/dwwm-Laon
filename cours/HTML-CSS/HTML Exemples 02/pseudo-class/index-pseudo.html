@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo</title>
+    <style>
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        main {
+            padding: 25px;
+        }
+
+        a {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 120px;
+            height: 24px;
+        }
+
+        a:link ,p{
+            background-color: gray;
+            color: black
+        }
+
+        a:hover ,p:hover {
+            background-color: darkgray;
+            color: white
+        }
+
+        a:visited {
+            background-color: red;
+            color: white
+        }
+
+        a:active, p:active {
+            background-color: pink;
+            color: red
+        }
+
+        #d2 p:first-of-type {
+            background-color: green;
+        }
+        #d2 p:last-child{
+            background-color: cyan;
+        }
+        #d2 ul li:first-child{
+            background-color: violet;
+        }
+        #d2 ul li:nth-child(2){
+            background-color: rgb(185, 160, 16);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div>LesPseudo-class permettent d'appliquer un style seleon l'etat d'un tag.<br>
+            les pseudos les plus utilisés le sont sur les boutons et les liens.<br>
+            mais on peut les appliquer à d'autres type de tags (p, div, li ...)
+        </div>
+        <div>
+            <h2>sur les liens:</h2>
+            <ul>
+                <li><a href="http://www.google.com/?fthyju">link</a></li>
+                <li><a href="http://www.google.com/?fhyfgbh">hover</a></li>
+                <li><a href="http://www.google.com/?sfghfoodf">visited</a></li>
+                <li><a href="http://www.google.com/?xfghsx">active</a></li>
+
+            </ul>
+        </div>
+        <div>
+            <h2>Sur les tag(div, paragraphes,...)</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="d2">
+            <h2>Sur l'ordre :</h2>
+            <p>para 1 : Lorem ipsum dolor sit amet.</p>
+            <p>para 2 : Lorem ipsum dolor sit amet.</p>
+            <p>para 3 : Lorem ipsum dolor sit amet.</p>
+            <p>para 4 : Lorem ipsum dolor sit amet.</p>
+            <!-- <h2>sur le Neme Enfant</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul> -->
+        </div>
+        </div>
+</body>
+
+</html>

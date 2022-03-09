@@ -1,0 +1,7 @@
+/* ajout nouvelle police */
+@font-face
+{
+    font-family: "brush";
+    src: url('AlexBrush-Regular.ttf');
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transformation - origin</title>
+    <style>
+        *,html{
+            padding: 0;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        .d1 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 115, 0);
+            border: 1px solid  #000;
+            transition: 1s;
+            transform: rotate(45deg);
+        }   
+        
+        .d1_cc{
+             transform-origin: 50% 50%; 
+        }
+        .d1_00{
+            transform-origin: 0 0;
+        }
+        .d1_br{
+            transform-origin: bottom right;
+        } 
+    </style>
+</head>
+
+<body>
+
+    <h1>transformation</h1>
+
+    <div class="d1 d1_cc">
+        Lorem ipsum dolor sit amet. <br>
+        Autem modi sit suscipit dignissimos? <br>
+
+    </div>
+    <div class="d1 d1_00">
+        Lorem ipsum dolor sit amet. <br>
+        Autem modi sit suscipit dignissimos? <br>
+    </div>
+    <div class="d1 d1_br">
+        Lorem ipsum dolor sit amet. <br>
+        Autem modi sit suscipit dignissimos? <br>
+    </div>
+</body>
+
+</html>

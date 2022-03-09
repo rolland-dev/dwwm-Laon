@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test de formulaire</title>
+</head>
+<body>
+    <h2>Merci d'entrer vos informations :</h2>
+    <form action="#" method="post">
+        <label for="nom">Nom:</label><br>
+        <input type="text" name ="nom" id="nom" placeholder="Votre nom "><br>
+
+        <label for="prenom">Prenom:</label><br>
+        <input type="text" name ="prenom" id="prenom" placeholder="votre prenom"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name ="email" id="email" placeholder="votre email"><br>
+       
+        <label for="password">Mot de passe:</label><br>
+        <input type="password" name ="password" id="password" placeholder="votre mot de passe"><br>
+
+        <label>Sexe:</label>
+        <input type="radio" name ="sexe">Homme
+        <input type="radio" name ="sexe">Femme<br>
+
+        <label>Vos passions :</label>
+        <label for="infos">Informatique:</label>
+        <input type="checkbox" name ="infos" id="infos">
+        <label for="maths">Mahématiques:</label>
+        <input type="checkbox" name ="maths" id="maths">
+        <br>
+
+        <label for="Langue">Votre langue maternelle:</label>
+        <select name="langue" id="langue">
+            <option value="fr">francais</option>
+            <option value="en">Anglais</option>
+            <option value="es">Espagnol</option>
+        </select>
+        <br>
+
+        Voiture :<br>
+        <select>
+            <optgroup label="Luxe">
+              <option value="porshe">Porshe</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="bmw">BMW</option>
+            </optgroup>
+            <optgroup label="Moyenne gamme">          
+              <option value="renault">Renault</option>
+              <option value="fiat">Fiat</option>
+              <option value="peugeot">Peugeot</option>
+            </optgroup>
+            <optgroup label="Bas gamme">          
+                <option value="travan">travan</option>
+                <option value="skoda">skoda</option>
+              </optgroup>
+          </select> 
+        <br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+</body>
+</html>

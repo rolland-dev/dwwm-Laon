@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestion de la video</h1>
+    <div>
+        <p>Avec le html5, les seuls formats standardisés sont :</p>
+        <ul>
+            <li>MP4</li>
+            <li>webM</li>
+            <li>Ogg</li>
+        </ul>
+        <p>Seul le mp4 est accepté par tous les navigateurs.</p>
+        <p>attributs : controls, autoplay, loop, muted, poster, preload, height, width,</p>
+        <p>child: src, type</p>
+    </div>
+    <div>
+        <p>La lectrice:</p>
+        <video width="320" height="240" controls>
+            <source src="lectrice.mp4" type="video/mp4">
+            <source src="lectrice.ogv" type="video/ogg">
+                Ce message s'affiche si le navigateur ne gère pas la balise video
+          </video> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>function expression</title>
+    </head>
+    <body>
+        <div>
+            <p>
+                <pre>
+                    let mafonction = function (param1, para2, ... paramN)  {
+                        return expression;
+                    };
+
+                    NB : ces fonctions sont appelées aussi fonctions anonymes...
+                </pre>
+                <br>
+
+                Exemple : <br>
+    
+                <pre>
+                    let bravo = function () {
+                        alert("vous avez reussi !");
+                    };
+                </pre>
+
+            </p>
+        </div>
+        <script>
+
+            let bravo = function () {
+                alert("vous avez reussi !");
+            }
+
+            let dommage = function() {
+                alert("Vous ferez mieux la prochaine fois!");
+            }
+
+            let myf = bravo;
+            myf();
+            alert(myf);
+
+            myf = dommage;
+            myf();
+
+        </script>
+
+    </body>
+</html>

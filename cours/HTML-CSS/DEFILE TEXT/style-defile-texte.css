@@ -1,0 +1,39 @@
+html,body {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    font-family:Verdana,Arial;
+    width: 800px;
+  }
+  #page{
+    margin:0 auto;
+    position:relative;
+  }
+ .marquee {
+    margin: 0 auto;
+    overflow: hidden;    /*  masque le décalage */
+    white-space: nowrap; /* force sur une même ligne */
+    -webkit-animation: marquee 20s linear infinite;
+            animation: marquee 20s linear infinite;
+  }
+   /* arrêt sur mouseover */
+  .marquee:hover{
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused
+  }
+  @-webkit-keyframes marquee{
+    0% {
+      text-indent:  800px;  /* tout à droite */
+    }
+    100% {
+      text-indent: -320px   /* tout à gauche */
+    }
+  }
+  @keyframes marquee{
+    0% {
+      text-indent: 800px   /* tout à droite */
+    }
+    100% {
+      text-indent: -320px   /* tout à gauche */
+    }
+  }

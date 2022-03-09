@@ -1,0 +1,18 @@
+#main_container{
+    display: flex;
+}
+header{
+    width: 40%;
+}
+.ss_main{
+    width: 60%;
+}
+
+/* #region rikkiki-medium*/
+@media (max-width:768px){
+    .identity p {
+      font-size: 1em;
+      line-height: 1em;
+    }
+  }
+  /* #endregion */

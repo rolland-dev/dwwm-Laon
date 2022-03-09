@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Filter</title>
+    </head>
+    <body>
+        <script>
+            // exemple number
+            function mymap(item){
+                return item/2;
+            }
+
+            let ar1 = [11, 8, 15, 6, 1, 19, 4, 16];
+            console.log(ar1);
+            
+            let ar1_good = ar1.map(mymap);
+            console.log(ar1_good);
+
+
+            // exemple string
+            function mymap2(item){
+                return item.toUpperCase();
+            }
+
+            let ar2 = ['pain','lait','beurre','confiture','orange'];
+            console.log(ar2);
+            
+            let ar2_good = ar2.map(mymap2);
+            console.log(ar2_good);
+
+            //exemple object
+            function mymap3(item){
+                if (item.note < 18){
+                    return {nom : item.nom, note: item.note+2}
+                }else{
+                    return item;
+                }
+            }
+            let ar3 = [ 
+                {nom:'martine', note:17},
+                {nom:'anne', note:19},
+                {nom:'aurelie', note:37},
+                {nom:'coralie', note:11} 
+            ];
+            console.log(ar3);
+            
+            let ar3_good = ar3.map(mymap3);
+            console.log(ar3_good);
+
+        </script>
+    </body>
+</html>
