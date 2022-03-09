@@ -1,0 +1,17 @@
+<package_installation_info version="2.0">
+<packageid>7EAFAEB8-82D3-4300-9694-C9CCDF27414D</packageid> 
+ 	<name>SPanel</name>
+<version>4.6.0.307</version>
+	<target_location>/SPanel/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype> 
+			<name>SPanel</name>
+			<assets_size>26</assets_size> 	
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+				<sig>bHRudlEn7FNQ6CmkIStPBVgC6Ea6vs9zdFUyKPFceaGvurXm14z1MrIuD4o/Q49oIPAf02VpMcIn8U47Z6wMutmPPbd5fkmxbJs7U/u7DhAuYP53nXLl2mqVeXnhbIvXG9srH4n9paznP2Jpiwf6Ydqhbkh+imhLzjWRllfGVRuhLFJGLc/xnuXE4ivElu4Klc1MHL+9MOPb1BcvrWVc3c/tHjQVylh87/A09uQj8kFxnsHehUmLOdDHMO3QMkuZAd/onMvxSesq68D6I8MOBqKyN6y4ipQwFPx3J0Jvr2dXtzElA1CPtU3BGk3hGCqzDaVU/sLmZm6jLU2zGDW9wSoSjSEZy3+7+AyiJgfzaJDv7kewIqizO/wEweLG8zJ1wz9Up4oncPPtl/69pJsEdwFZyBbGmvwYIF+9eFFLGsiQya+vZ7JQJdIjKfukXzVbhOTmlKJtr8/ELZAcFaOM6CKXEmNqmQ8je6DgKjDBqDdtha8N+0fNGRo9yan5rSvp</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

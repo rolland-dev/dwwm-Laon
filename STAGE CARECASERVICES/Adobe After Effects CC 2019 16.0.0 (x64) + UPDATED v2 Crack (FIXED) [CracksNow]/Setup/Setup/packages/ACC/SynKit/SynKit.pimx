@@ -1,0 +1,20 @@
+<package_installation_info version="2.0">
+	<name>SynKit</name>
+<packageid>4A1C5AFD-44A3-4697-8644-52D55C8ADE25</packageid> 
+ <version>4.2.0.88</version>
+	<target_location>/CoreSyncPlugins/SynKit/</target_location>
+	<package_upgrade_info>
+		<old_packageid>synkit32</old_packageid>
+	</package_upgrade_info>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>SynKit</name>
+			<assets_size>26</assets_size>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8vPg==</validation_xml>
+				<sig>uOOkYrvpRvmSt99eL12Wvxk+S5vxpPSWhJ6rRd3VhIT9pq2oMYlNa16ZVej4Cf4eWqpn76Yd2plBd9Kgz2KuiXFDHBUzhLxrngynVX5JbmzgmfY2A+YZ4G3sajKqUyCr2EvctxQFl7hRTOJd2Aw97NktNPNTHCriZhpdUQKv74AYzdceHIZwBUNmjn2f0Vv1XpPe5+5MGDiSBcPYOZG+4jluKDWlRFOD65XbuwTkGCTOzoSVD3PetkyETTFUlPiIGzng7RM/2mJLbl0Qk9ONQl4vtIkrTLYivkmldWv0PSsNZ7YvM+dbKIr3rxKOp7VaANVNgMZMDO0hpeal8fi0i0JRm1o6ii4LoeSXinH7Oq/4opdhPPSai8kIEhPXOh/RQT6sIeArrlnmRzLGo3aZRAP4824ieTTeIdTEr5mVcKX3fN3W7qDAsh9u6wvmP+PPpNXx5wEKghXAbyJA26aZ9yIZshu1xw+Y36zhjzxHbdUaFDEh5UyWVFtvPnczzcvB</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DriverInfo>
+<ProductInfo>
+<Name>After Effects CC 2019</Name>
+<SAPCode>AEFT</SAPCode>
+<CodexVersion>16.0</CodexVersion>
+<BaseVersion>16.0</BaseVersion>
+<Platform>win64</Platform>
+<EsdDirectory>./AEFT</EsdDirectory>
+<Dependencies>
+<Dependency>
+<SAPCode>ACR</SAPCode>
+<BaseVersion>11.0</BaseVersion>
+<EsdDirectory>./ACR</EsdDirectory>
+</Dependency>
+<Dependency>
+<SAPCode>CDEC</SAPCode>
+<BaseVersion>1.0</BaseVersion>
+<EsdDirectory>./CDEC</EsdDirectory>
+</Dependency>
+<Dependency>
+<SAPCode>COMP</SAPCode>
+<BaseVersion>1.0</BaseVersion>
+<EsdDirectory>./COMP</EsdDirectory>
+</Dependency>
+<Dependency>
+<SAPCode>CORG</SAPCode>
+<BaseVersion>1.0</BaseVersion>
+<EsdDirectory>./CORG</EsdDirectory>
+</Dependency>
+</Dependencies>
+</ProductInfo>
+</DriverInfo>

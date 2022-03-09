@@ -1,0 +1,26 @@
+<package_installation_info version="2.0">	
+<packageid>3561685E-721B-480C-AAE8-E467D66C23AE</packageid> 
+                                                                                                	<name>HEX</name>
+<version>4.7.0.400</version>
+	<target_location>/HEX/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype> 
+			<name>HEX</name>
+			<assets_size>2774944</assets_size> 	
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>HEX</name>
+					<type>UIX</type>
+					<version>1.0</version>
+					<module_path>/HEX/HEX.dll</module_path>
+					<display_name>HEX</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8+PEZpbGU+PEluc3RhbGxQYXRoPkFkb2JlIENFRiBIZWxwZXIuZXhlPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVke3x9RGlnaUNlcnQgRVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNlIEVWIFJvb3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5IRVguZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVke3x9RGlnaUNlcnQgRVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNlIEVWIFJvb3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjwvVmFsaWRhdGlvbkluZm8+</validation_xml>
+				<sig>UK6+h7cqJQAuw0kpLqD19zVBthXh53DRiq2khHf43NroCQhF5kiikSwak85CvcO+3YB3E+JX3+t0IwOQ9pFQph3r6K8QfjueEv8qbqAPzSPQ/HOaN3eLAZAe/JSFdXlSkZQ5R84KIWKSLp6RvlDTjHV2kLE9/xr5JGbFToj/W91+SfHQYSshiWDw3YNGpcGfVhFTIkRfoOEhOm75rH61z7CIBTxMfQbZu2X00etrX8Lm+4J//FiYQxtTLmpvN2ccbNnHz2A5Wqj253aW0hkrPfF4GeCzqkCnvfj9G0eCwgtSlDr0TEYq5F8w4dGrPbdD0ZK2d3rLuFHOalGGt6pATOySfHISSAe5cd+CAh6z9rFom0sNMMO81uEFfdDveimG77uptY6gXNDdB2/QSuewqjsKle4VmzoBAlbW+xHB+LV/0Ex8Nc2tl2x4Vuu6V6Z3fVEA8V/gNsoY9xZMdTohB35OAhkGO+jmjA/hj4VZmUZHqXYLWmY8nBJ0ZRPCWEge</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

@@ -1,0 +1,197 @@
+{
+  "Name" : "STI_Color_CommonSetRGB_HD",
+  "SAPCode" : "CORG",
+  "ProductVersion" : "1.1.4",
+  "CodexVersion" : "1.1",
+  "BaseVersion" : "1.0",
+  "Platform" : "win32",
+  "SupportedLanguages" : {
+    "Language" : [ {
+      "value" : "",
+      "locale" : "fr_FR"
+    }, {
+      "value" : "",
+      "locale" : "it_IT"
+    }, {
+      "value" : "",
+      "locale" : "uk_UA"
+    }, {
+      "value" : "",
+      "locale" : "nl_NL"
+    }, {
+      "value" : "",
+      "locale" : "en_US"
+    }, {
+      "value" : "",
+      "locale" : "hu_HU"
+    }, {
+      "value" : "",
+      "locale" : "ja_JP"
+    }, {
+      "value" : "",
+      "locale" : "fr_MA"
+    }, {
+      "value" : "",
+      "locale" : "en_IL"
+    }, {
+      "value" : "",
+      "locale" : "es_ES"
+    }, {
+      "value" : "",
+      "locale" : "en_GB"
+    }, {
+      "value" : "",
+      "locale" : "en_AE"
+    }, {
+      "value" : "",
+      "locale" : "ru_RU"
+    }, {
+      "value" : "",
+      "locale" : "zh_TW"
+    }, {
+      "value" : "",
+      "locale" : "pt_BR"
+    }, {
+      "value" : "",
+      "locale" : "da_DK"
+    }, {
+      "value" : "",
+      "locale" : "ko_KR"
+    }, {
+      "value" : "",
+      "locale" : "cs_CZ"
+    }, {
+      "value" : "",
+      "locale" : "tr_TR"
+    }, {
+      "value" : "",
+      "locale" : "de_DE"
+    }, {
+      "value" : "",
+      "locale" : "es_MX"
+    }, {
+      "value" : "",
+      "locale" : "fr_CA"
+    }, {
+      "value" : "",
+      "locale" : "zh_CN"
+    }, {
+      "value" : "",
+      "locale" : "sv_SE"
+    }, {
+      "value" : "",
+      "locale" : "pl_PL"
+    } ]
+  },
+  "LanguageSet" : "LS1",
+  "ConflictingProcesses" : {
+    "Process" : [ "" ],
+    "ConflictingProcess" : [ ]
+  },
+  "AMTConfig" : {
+    "appID" : "{CORG-1.1-32-ADBEADBEADBEADBEADBEADBE}"
+  },
+  "AppLaunch" : "",
+  "InstallDir" : {
+    "value" : "[AdobeCommon]"
+  },
+  "Packages" : {
+    "Package" : [ {
+      "PackageName" : "AdobeColorCommonSetRGB_1_0-mul",
+      "AliasPackageName" : "1",
+      "PackageVersion" : "1.1.4",
+      "ProcessorFamily" : "32-bit",
+      "DownloadSize" : 8330,
+      "ExtractSize" : 8592,
+      "InstallSequenceNumber" : 7001,
+      "IsShared" : true,
+      "Features" : {
+        "Feature" : [ {
+          "Name" : "ColorCommon"
+        } ]
+      }
+    } ]
+  },
+  "CompressionType" : "Zip-Deflated",
+  "UpdateDescription" : {
+    "Language" : [ {
+      "value" : "Cette mise à jour intègre d'importants correctifs à Adobe Color Profiles.",
+      "locale" : "fr_FR"
+    }, {
+      "value" : "Questo aggiornamento offre importanti correzioni relative ad Adobe Color Profiles.",
+      "locale" : "it_IT"
+    }, {
+      "value" : "Це оновлення пропонує важливі виправлення для Adobe Color Profiles.",
+      "locale" : "uk_UA"
+    }, {
+      "value" : "Deze update biedt belangrijke oplossingen voor Adobe Color Profiles.",
+      "locale" : "nl_NL"
+    }, {
+      "value" : "This update provides important fixes for Adobe Color Profiles.",
+      "locale" : "en_US"
+    }, {
+      "value" : "Ez a frissítés az Adobe Color Profiles fontos javításait tartalmazza.",
+      "locale" : "hu_HU"
+    }, {
+      "value" : "このアップデートでは、Adobe Color Profiles についての重要な修正を提供します。",
+      "locale" : "ja_JP"
+    }, {
+      "value" : "Cette mise à jour intègre d'importants correctifs à Adobe Color Profiles.",
+      "locale" : "fr_MA"
+    }, {
+      "value" : "This update provides important fixes for Adobe Color Profiles.",
+      "locale" : "en_IL"
+    }, {
+      "value" : "En esta actualización se incluyen correcciones importantes para Adobe Color Profiles.",
+      "locale" : "es_ES"
+    }, {
+      "value" : "This update provides important fixes for Adobe Color Profiles.",
+      "locale" : "en_GB"
+    }, {
+      "value" : "This update provides important fixes for Adobe Color Profiles.",
+      "locale" : "en_AE"
+    }, {
+      "value" : "В этом обновлении содержатся важные исправления для Adobe Color Profiles.",
+      "locale" : "ru_RU"
+    }, {
+      "value" : "此更新提供 Adobe Color Profiles 的數項重要修正。",
+      "locale" : "zh_TW"
+    }, {
+      "value" : "Esta atualização oferece correções importantes para Adobe Color Profiles.",
+      "locale" : "pt_BR"
+    }, {
+      "value" : "Denne opdatering indeholder vigtige rettelser til Adobe Color Profiles.",
+      "locale" : "da_DK"
+    }, {
+      "value" : "이 업데이트에서는 Adobe Color Profiles에 대한 중요한 수정 사항을 제공합니다.",
+      "locale" : "ko_KR"
+    }, {
+      "value" : "Tato aktualizace přináší důležité opravy pro Adobe Color Profiles.",
+      "locale" : "cs_CZ"
+    }, {
+      "value" : "Bu güncelleme, Adobe Color Profiles için önemli düzeltmeler sunmaktadır.",
+      "locale" : "tr_TR"
+    }, {
+      "value" : "Dieses Update enthält wichtige Korrekturen für Adobe Color Profiles.",
+      "locale" : "de_DE"
+    }, {
+      "value" : "En esta actualización se incluyen correcciones importantes para Adobe Color Profiles.",
+      "locale" : "es_MX"
+    }, {
+      "value" : "Cette mise à jour intègre d'importants correctifs à Adobe Color Profiles.",
+      "locale" : "fr_CA"
+    }, {
+      "value" : "此更新为 Adobe Color Profiles 提供重要修复。",
+      "locale" : "zh_CN"
+    }, {
+      "value" : "Den här uppdateringen innehåller viktiga korrigeringar för Adobe Color Profiles.",
+      "locale" : "sv_SE"
+    }, {
+      "value" : "W tej aktualizacji zawarto ważne poprawki dotyczące Adobe Color Profiles.",
+      "locale" : "pl_PL"
+    } ]
+  },
+  "MinimumSupportedClientVersion" : "3.9.0.24",
+  "HDBuilderVersion" : "0.0.136",
+  "version" : "1.1"
+}

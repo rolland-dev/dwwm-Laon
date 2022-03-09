@@ -1,0 +1,26 @@
+<package_installation_info version="2.0">	
+<packageid>7709641B-41B9-43A1-8A91-292B12B5BA48</packageid> 
+ <name>NHEX</name>
+<version>4.7.0.400</version>
+	<target_location>/NHEX/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype> 
+			<name>NHEX</name>
+			<assets_size>463320</assets_size> 	
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>NHEX</name>
+					<type>UIX</type>
+					<version>1.0</version>
+					<module_path>/NHEX/NHEX.dll</module_path>
+					<display_name>NHEX</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8+PEZpbGU+PEluc3RhbGxQYXRoPk5IRVguZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVke3x9RGlnaUNlcnQgRVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNlIEVWIFJvb3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjwvVmFsaWRhdGlvbkluZm8+</validation_xml>
+				<sig>o9mcm1+999xYzOOa65YClszlF8iKUuraeV46B5UToZl9+gOIvW0UghpgwuhLtyB19t9J0Km4dcxzvtFCC9FzpYVMoDnRiGnbEHCJ97x9Yee4Useid4MWBBW4wDau+HnoDlLhtYFHUBMCRuoJx39CpvmzeY7j4tvARMTM+ZV3F1PqD9BZfYa00/C9Z/Vl9t2kRMtc0R3/ARDwjIWhjZY7QQnPMnYrKxf3a1C7yP/+2XjsTRntKrNKdVClHm2Rrgt+7QtRqnYv/pFCbTtpN6//iYK5ZCnY40eiKv2gIeoHWDP0lxR4NJWcUnsUp8GQkG4AEGnLOfTa/A9T3eeJDrPn3I/WMSY0NGNZ2vpe/J1mEp7YpXHLDRQ/XrFlX6t/Tc+fli/yinPIdOZYgMuNWsjFTLKRQDCi9I1yuH6KWIAzIAizCx/GlsyJM/pzX4QFqmkZLo45QYaIpiv3ikKy7k/+tTWYVLEHHm0jgm6FzVPazPRajUmp40C4D5co6FgcPWRJ</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>
