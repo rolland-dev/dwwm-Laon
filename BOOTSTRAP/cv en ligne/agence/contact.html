@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Affichage pc et tablette -->
+        <link rel="stylesheet" href="style-page-1024.css" media="(min-width:577px)">
+        <link rel="stylesheet" href="style-contact.css" media="(min-width:577px)">
+
+        <!-- Affichage mobile -->
+        <link rel="stylesheet" href="style-page-576.css" media="(max-width:576px)">
+        <link rel="stylesheet" href="style-contact-576.css" media="(max-width:576px)">
+
+        <title>contact</title>
+    </head>
+    <body>
+        <header>
+            <h1>Agence de Voyages RLD</h1>
+        </header>
+
+        <div class="menu">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="equipes.html">Equipe</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="cgv.html">CGV</a></li>
+            </ul>
+        </div>
+
+        <form id="maForm" action="#" method="post">
+            <fieldset class="identite">
+                <legend>Informations personnelles</legend>
+                <p>
+                    <label for="form_prenom">Prénom : </label>
+                    <input type="text" id="form_prenom" name="prenom" />
+                </p>
+                <p>
+                    <label for="form_nom">Nom : </label>
+                    <input type="text" id="form_nom" name="nom" />
+                </p>
+                <p>
+                    <label for="form_sexe">Sexe : </label>
+                    <input type="text" id="form_sexe" name="sexe" />
+                </p>
+                <p class="age">
+                    <label for="form_naissance">Date de naissance : </label>
+                    <input type="text" id="form_naissance" name="jour" />
+                    <input type="text" name="mois" />
+                    <input type="text" name="annee" />
+                </p>
+                <p>
+                    <label for="form_addresse">Adresse : </label>
+                    <input type="text" id="form_addresse" name="addresse" />
+                </p>
+                <p>
+                    <label for="form_postal_code">Code postal : </label>
+                    <input type="text" id="form_postal_code" name="postal_code" />
+                </p>
+                <p>
+                    <label for="form_ville">Ville : </label>
+                    <input type="text" id="form_ville" name="ville" />
+                </p>
+                <p>
+                    <label for="form_pays">Pays : </label>
+                    <select id="form_pays" name="pays">
+                        <optgroup label="Europe">
+                            <option value="fr">France</option>
+                            <option value="en">Angleterre</option>
+                        </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="ca">Canada</option>
+                            <option value="us">États-Unis</option>
+                        </optgroup>
+                        
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset class="acces">
+                <legend>Compte</legend>
+                    <p>
+                        <label for="form_login">Identifiant : </label>
+                        <input type="text" id="form_login" name="login" />
+                    </p>
+                    <p>
+                        <label for="form_password">Mot de passe : </label>
+                        <input type="password" id="form_password" name="password" />
+                    </p>
+                    <p>
+                        <label for="form_password2">Confirmer le mot de passe : </label>
+                        <input type="password" id="form_password2" name="password2" />
+                    </p>
+                    <p>
+                        <label for="form_mail">Adresse email : </label>
+                        <input type="text" id="form_mail" name="mail" />
+                    </p>
+                    <p>
+                        <label for="form_question">Question secrète : </label>
+                        <input type="text" id="form_question" name="question" />
+                    </p>
+                    <p>
+                        <label for="form_response">Réponse : </label>
+                        <input type="text" id="form_response" name="response" />
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <input type="submit" name="submit" />
+                </p>
+        </form>
+
+        <footer>
+            <h2>Copyright 2020 - Agence de Voyage RLD</h2>
+        </footer>
+    </body>
+</html>
