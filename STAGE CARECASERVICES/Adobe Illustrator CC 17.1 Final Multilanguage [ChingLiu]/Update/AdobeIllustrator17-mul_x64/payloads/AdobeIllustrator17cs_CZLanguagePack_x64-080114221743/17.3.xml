@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd" CSUVersion="1.0">
+    <UpdateID>17.3</UpdateID>
+    <OwningChannel>AdobeIllustrator17-csCZ_x64</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+	<TargetLicensingType>1</TargetLicensingType>
+	<RecommendingChannels>
+		<ChannelID>AdobeIllustrator17-mul_x64</ChannelID>
+	</RecommendingChannels>
+    <DisplayName default="en_US">
+        <en_US>AI CC Creative Cloud Update</en_US>
+		<en_GB>AI CC Creative Cloud Update</en_GB>
+        <cs_CZ>AI CC Creative Cloud - aktualizace</cs_CZ>
+        <da_DK>Opdatering til AI CC Creative Cloud</da_DK>
+        <de_DE>AI CC Creative Cloud-Aktualisierung</de_DE>
+        <es_ES>Actualización de AI CC para Creative Cloud</es_ES>
+		<es_MX>Actualización de Adobe Illustrator CC</es_MX>
+		<fi_FI>AI CC Creative Cloud Update</fi_FI>
+        <fr_FR>Mise à jour d'AI CC Creative Cloud</fr_FR>
+		<fr_CA>Mise à jour d'AI CC Creative Cloud</fr_CA>
+		<fr_MA>Mise à jour d'AI CC Creative Cloud</fr_MA>
+        <hu_HU>AI CC Creative Cloud frissítés</hu_HU>
+        <it_IT>Aggiornamento AI CC per Creative Cloud</it_IT>
+        <ja_JP>AI CC Creative Cloud アップデート</ja_JP>
+        <ko_KR>AI CC Creative Cloud 업데이트</ko_KR>
+        <nl_NL>Update AI CC Creative Cloud</nl_NL>
+        <pl_PL>AI CC Creative Cloud — uaktualnienie</pl_PL>
+        <pt_BR>Atualização do AI CC Creative Cloud</pt_BR>
+        <ru_RU>Обновленная версия сервиса AI CC Creative Cloud</ru_RU>
+        <sv_SE>AI CC Creative Cloud-uppdatering</sv_SE>
+        <tr_TR>AI CC Creative Cloud Güncellemesi</tr_TR>
+        <uk_UA>Оновлення AI CC для Creative Cloud</uk_UA>
+        <zh_CN>AI CC Creative Cloud 更新</zh_CN>
+        <zh_TW>AI CC Creative Cloud 更新</zh_TW>
+		<en_AE>AI CC Creative Cloud Update</en_AE>
+		<en_IL>AI CC Creative Cloud Update</en_IL>
+    </DisplayName>
+    <Description default="en_US">
+		<en_US>This Illustrator CC update installs new features for Adobe Creative Cloud members, including: Package files, Unembed images and Links panel enhancements.</en_US>
+		<en_GB>This Illustrator CC update installs new features for Adobe Creative Cloud members, including: Package files, Unembed images and Links panel enhancements.</en_GB>
+        <cs_CZ>Tato aktualizace Illustratoru CC instaluje nové funkce pro členy programu Adobe Creative Cloud, včetně: zabalení souborů, zrušení vložení obrazů a vylepšení panelu Odkazy.</cs_CZ>
+        <da_DK>Denne opdatering til Illustrator CC installerer nye funktioner til Adobe Creative Cloud-medlemmer, herunder: Pakkefiler, Ophæv integrering af billeder og forbedringer i panelet Kæder.</da_DK>
+        <de_DE>In dieser Illustrator CC-Aktualisierung sind neue Funktionen für Mitglieder der Adobe Creative Cloud verfügbar. Diese beinhalten unter anderem: Dateien verpacken, Einbettung von Bildern aufheben und Verbesserungen des Verknüpfungenbedienfelds.</de_DE>
+        <es_ES>Esta actualización de Illustrator CC instala diversas funciones exclusivas para abonados al programa Adobe Creative Cloud: empaquetado de archivos, desincrustación de imágenes y mejoras en el panel Enlaces.</es_ES>
+		<es_MX>Esta actualización de Illustrator CC instala diversas funciones exclusivas para abonados al programa Adobe Creative Cloud: empaquetado de archivos, desincrustación de imágenes y mejoras en el panel Enlaces.</es_MX>
+		<fi_FI>This Illustrator CC update installs new features for Adobe Creative Cloud members, including: Package files, Unembed images and Links panel enhancements.</fi_FI>
+        <fr_FR>Cette mise à jour d'Illustrator CC installe de nouvelles fonctionnalités pour les membres d'Adobe Creative Cloud, notammentª: améliorations apportées au panneau Liens, assemblage de fichiers et annulation de l'incorporation des images.</fr_FR>
+		<fr_CA>Cette mise à jour d'Illustrator CC installe de nouvelles fonctionnalités pour les membres d'Adobe Creative Cloud, notammentª: améliorations apportées au panneau Liens, assemblage de fichiers et annulation de l'incorporation des images.</fr_CA>
+		<fr_MA>Cette mise à jour d'Illustrator CC installe de nouvelles fonctionnalités pour les membres d'Adobe Creative Cloud, notammentª: améliorations apportées au panneau Liens, assemblage de fichiers et annulation de l'incorporation des images.</fr_MA>
+        <hu_HU>Az Illustrator CC frissítés új funkciókat telepít  az Adobe Creative Cloud tagjainak, pl. csomagfájlok, képek beágyazásának megszüntetése és a Hivatkozások panel továbbfejlesztése.</hu_HU>
+        <it_IT>Questo aggiornamento di Illustrator CC installa nuove funzioni per gli utenti membri di Adobe Creative Cloud, comprese le seguenti: creazione di pacchetti di file, scorporamento delle immagini e pannello Collegamenti migliorato.</it_IT>
+        <ja_JP>この Illustrator CC アップデートでは、Adobe Creative Cloud メンバーシップ向けの新機能をインストールします。次のものが含まれます :  ファイルのパッケージ、画像の埋め込み解除、リンクパネルの機能強化。</ja_JP>
+        <ko_KR>이번 Illustrator CC 업데이트는 Adobe Creative Cloud 멤버를 위해 패키지 파일, 이미지 포함 취소 및 연결 패널 향상을 포함하는 새로운 기능을 설치합니다.</ko_KR>
+        <nl_NL>Deze update voor Illustrator CC bevat nieuwe functies voor Adobe Creative Cloud-leden, waaronder: pakketten maken van bestanden, de koppeling van afbeeldingen ongedaan maken en verbeteringen in het deelvenster Koppelingen.</nl_NL>
+        <pl_PL>Ta aktualizacja programu Illustrator CC dodaje nowe funkcje dla użytkowników usługi Adobe Creative Cloud, w tym m.in.. pliki pakietów, funkcję cofania osadzenia obrazów oraz poprawki panelu Łącza.</pl_PL>
+        <pt_BR>O Illustrator CC instala novos recursos para assinantes da Adobe Creative Cloud, incluindo: Arquivos de pacotes, imagens não incorporadas e melhorias no painel Vínculos.</pt_BR>
+        <ru_RU>Данная обновленная версия Illustrator CC включает в себя такие новые функции, как «Упаковка файлов», «Извлечение изображений», а также усовершенствованную палитру «Связи» только для пользователей сервиса Adobe Creative Cloud.</ru_RU>
+        <sv_SE>Den här uppdateringen för Illustrator CC installerar nya funktioner för medlemmar i Adobe Creative Cloud, bland annat: Paketera filer, upphäva inbäddning av bilder och förbättringar av panelen Länkar.</sv_SE>
+        <tr_TR>Bu Illustrator CC güncellemesi Adobe Creative Cloud üyeleri için Dosya paketleme, Gömülü görüntüleri çıkarma ve Bağlantılar paneli geliştirmeleri dahil pek çok yeni özellik yükler.</tr_TR>
+        <uk_UA>Це оновлення Illustrator CC надає членам Adobe Creative Cloud нові можливості, наприклад: удосконалені функції пакування файлів і вбудовування зображень, а також покращену панель «Зв'язки».</uk_UA>
+        <zh_CN>此 Illustrator CC 更新会安装适用于 Adobe Creative Cloud 成员的新功能，包括: 打包文件、取消嵌入图像和“链接”面板增强功能。</zh_CN>
+        <zh_TW>此項 Illustrator CC 更新會安裝 Adobe Creative Cloud 成員適用的新功能，包括: 封裝檔案、取消嵌入影像和「連結」面板增強功能。</zh_TW>
+		<en_AE>This Illustrator CC update installs new features for Adobe Creative Cloud members, including: Package files, Unembed images and Links panel enhancements.</en_AE>
+		<en_IL>This Illustrator CC update installs new features for Adobe Creative Cloud members, including: Package files, Unembed images and Links panel enhancements.</en_IL>
+    </Description>
+    <AffectedChannels>
+        <ChannelID>AdobeIllustrator17-mul_x64</ChannelID>
+    </AffectedChannels>
+    <InstallFiles>
+    <File RIBSBased="1">
+      <Name>
+        
+      </Name>
+      <Type>
+        
+      </Type>
+      <ExecutableName>
+        
+      </ExecutableName>
+      <Size>
+        
+      </Size>
+      
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{34C27923-F293-4B96-A24C-A6CA95FF412B}</UpdatePayloadID>
+  <OwningPayloadID>{0FF19A83-2BE4-420D-A8CD-4CEF1996430C}</OwningPayloadID>
+  <ConflictingProcesses/>
+</Manifest>
