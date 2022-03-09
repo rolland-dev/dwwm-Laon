@@ -1,0 +1,82 @@
+/* MISE EN FORME POUR TOUTES LES PAGES DU SITE */
+
+/* Mise en forme de la page avec fond d'écran */
+body {
+  width: auto;
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+}
+
+/*  mise en forme du titre du site */
+h1 {
+  text-align: center;
+  color: yellow;
+  padding: 20px;
+  border-radius: 50px;
+  background-image: url("banniere-ete.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+}
+
+/* --------------- */
+/*  MENU PRINCIPAL */
+
+.menu ul {
+  margin: 0px;
+  padding: 0;
+  border-radius: 50px;
+}
+.menu a {
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+}
+.menu > ul > li {
+  float: left;
+  position: relative;
+  border-radius: 50px;
+  list-style-type: none;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu {
+  width: 100%;
+  /* background-color: red; */
+  opacity: 0.5;
+  border-radius: 50px;
+}
+
+.menu > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu > ul > li > a {
+  padding: 20px 30px;
+  color: red;
+  border-radius: 50px;
+  list-style-type: none;
+}
+.menu a:hover {
+  background-color: grey;
+  color: blanchedalmond;
+}
+
+/* mise en page pied de page */
+footer {
+  text-align: center;
+  background-color: cornflowerblue;
+  border-radius: 60px;
+  color: yellow;
+  padding: 5px;
+  background-image: url("banniere-ete.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+}

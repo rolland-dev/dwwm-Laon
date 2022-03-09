@@ -1,0 +1,86 @@
+/* MISE EN FORME POUR TOUTES LES PAGES DU SITE 576 px */
+
+/* Mise en forme de la page avec fond d'écran */
+body {
+  width: auto;
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+}
+
+/*  mise en forme du titre du site */
+h1 {
+  text-align: center;
+  color: yellow;
+  padding: 20px;
+  border-radius: 50px;
+  background-image: url("banniere-ete.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+}
+
+/* --------------- */
+/*  MENU PRINCIPAL */
+.menu {
+  font-size: 18pt;
+  background-image: url("palmier titre 50.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  position: relative;
+  top: 10;
+  left: 0;
+  z-index: 10;
+  height: 30px;
+  padding: 25px 0px 25px 0px;
+}
+
+.menu ul {
+  position: relative;
+  top: -54px;
+  left: 65px;
+  padding: 10px;
+  display: block;
+  list-style-type:none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+}
+
+.menu ul li {
+  background-color: lightgray;
+  height: 15px;
+  width: 100px;
+  border-bottom: solid 2px rgb(247, 240, 240);
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 10px;
+}  
+
+.menu ul li:hover {
+  background-color:yellow;
+  color: red;
+  cursor: pointer;
+}
+
+.menu:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.menu ul li a{
+  text-decoration: none;
+}
+
+
+/* mise en page pied de page */
+footer {
+  text-align: center;
+  border-radius: 60px;
+  color: yellow;
+  padding: 5px;
+  background-image: url("banniere-ete.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+}

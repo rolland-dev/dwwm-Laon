@@ -1,0 +1,132 @@
+/* MISE EN FORME COMPLEMENTAIRE PAGE CONTACT */
+
+/* Mise en place du fond d'écran */
+body {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 300% ;
+  }
+  
+  /* fond blanc pour signaler la page actuelle */
+  .menu ul li:nth-child(4) {
+    background-color: rgb(115, 115, 247);
+  }
+  
+/* Mise en forme formulaire */
+
+#maForm
+{
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 25px;
+}
+
+#maForm p
+{
+	margin: 2px 0;
+}
+
+/* fieldset , legend */
+#maForm fieldset
+{
+	margin-bottom: 10px;
+	border: rgb(238, 127, 127) 1px solid;
+}
+
+#maForm fieldset:hover
+{
+	background-color: #FFF;
+}
+
+#maForm fieldset legend
+{
+	padding: 0 10px;
+	border-left: rgb(238, 127, 127) 1px solid;
+	border-right: rgb(238, 127, 127) 1px solid;
+	font-size: 1.2em;
+	color: rgb(63, 61, 61);
+}
+#maForm fieldset:hover legend{
+    background-color: #FFF;
+}
+.acces, .identite{
+    padding: 15px;
+    margin: 20px;
+}
+/* Label */
+#maForm label
+{
+	background-color: #FFCC66;
+	display: block;
+	width: 39%;
+	float: left;
+	padding-right: 1%;
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+#maForm label:hover
+{
+	font-weight: bold;
+}
+
+#maForm .form_label_nostyle
+{
+	background: none;
+}
+
+/* Input */
+#maForm input, #maForm select
+{
+	margin-left: 1%;
+	width: 58%;
+	border: #CCC 1px solid;
+}
+
+#maForm input:hover, #maForm select:hover, #maForm input:focus, #maForm select:focus
+{
+	border: #999 1px solid;
+	background-color: #DDEEFF;
+}
+
+#maForm .form_input_day_month
+{
+	width: 3%;
+}
+
+#maForm .form_input_year
+{
+	width: 6%;
+}
+#maForm .age input[type="text"]{
+    width: 30px;
+    content: '/';
+}
+/* button submit */
+#maForm input[type="submit"]
+{
+	border: #DDEEFF 1px solid;
+	width: 27%;
+}
+
+#maForm input[type="submit"]:hover
+{
+	background-color: #66CC33;
+	cursor: pointer;
+}
+
+#maForm input[type="reset"]
+{
+	border: #DDEEFF 1px solid;
+	width: 27%;
+}
+
+#maForm input[type="reset"]:hover
+{
+	background-color: #E6484D;
+	cursor: pointer;
+}
+
+

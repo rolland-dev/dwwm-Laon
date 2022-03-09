@@ -1,0 +1,22 @@
+/* MISE EN FORME COMPLEMENTAIRE PAGE CGV */
+
+/* Mise en place du fond d'écran */
+body {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+  }
+  
+  /* fond blanc pour signaler la page actuelle */
+  .menu ul li:nth-child(5) {
+    background-color: rgb(115, 115, 247);
+  }
+
+  /* Mise en page cgv */
+  .cgv
+  {
+      text-align: justify;
+      padding: 20px;
+  }
+
+  

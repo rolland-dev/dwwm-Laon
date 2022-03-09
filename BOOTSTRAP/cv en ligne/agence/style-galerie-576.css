@@ -1,0 +1,75 @@
+/* MISE EN FORME COMPLEMENTAIRE PAGE GALERIE 576 px*/
+
+/* Mise en place du fond d'écran */
+body {
+  background-image: url("fond.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+}
+
+/* fond blanc pour signaler la page actuelle */
+.menu ul li:nth-child(2) {
+  background-color: lightblue;
+}
+
+/* mise en page galerie */
+.galerie {
+  max-width: 80%;
+  margin: auto;
+}
+.galerie ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* suppression des puces */
+.galerie ul li {
+  list-style: none;
+  position: relative;
+  width: 300px;
+  height: 130px;
+  z-index: 1;
+}
+
+/* Définition de la taille des images et position */
+.galerie ul li img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 130px;
+  margin: 5px 5px 5px 8px;
+  object-fit: cover;
+  border: 1px solid #28323b;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #28323b;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+/* agrandissement images au survol et affichage texte */
+.galerie ul li div {
+  position: absolute;
+  top: 55px;
+  left: 45px;
+  transform: rotate(-35deg);
+  opacity: 0;
+  color: rgb(249, 250, 248);
+}
+.galerie ul li:hover{
+  transform: scale(2);
+  z-index: 98;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.galerie ul li:hover div{
+  opacity: 0.9;
+}
+.galerie ul li div:hover{
+  font-size: x-large;
+  background-color: yellow;
+  color: black;
+  transform: rotateX(-35deg);
+  left: 30px;
+}

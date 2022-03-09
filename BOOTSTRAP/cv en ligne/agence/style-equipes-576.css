@@ -1,0 +1,50 @@
+/* MISE EN FORME COMPLEMENTAIRE PAGE EQUIPES */
+
+/* Mise en place du fond d'écran */
+body {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+  }
+  
+  /* fond blanc pour signaler la page actuelle */
+  .menu ul li:nth-child(3) {
+    background-color: lightblue;
+  }
+  
+  /* mise en page galerie */
+  .galerie ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* suppression des puces */
+  .galerie ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Définition de la taille des images et position */
+  .survole{
+    display: none;
+  }
+  .galerie ul li img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #28323b;
+    border-radius: 155px;
+    box-shadow: 2px 4px 2px #5ccf19;
+  }
+  
+  .galerie a >img:hover{
+    display: none;
+  }
+  .galerie a >img:hover +.survole{
+   display: inherit;
+  }

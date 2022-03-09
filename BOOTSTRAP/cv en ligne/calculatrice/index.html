@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calculatrice & Tables multiplications</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+        /* JavaScript */
+
+        //  initialisation des variables
+        let chiffre1;
+        let chiffre2;
+        let operateur;
+        let j = 0;
+        let total;
+
+        // fonction qui récupère les chiffres
+        function btm(val) {
+            document.getElementById("calc-output").innerHTML += val;
+
+        }
+
+        // fonction qui efface la zone résultat et zone table multiplication
+        function btmClean() {
+            document.getElementById("calc-output").innerHTML = "";
+            document.getElementById("multiple").innerHTML = "";
+        }
+
+        // fonctions pour les différents opérateurs
+        function btmPlus() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "+";
+            btmClean();
+        }
+
+        function btmLess() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "-";
+            btmClean();
+        }
+
+        function btmMultiply() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "*";
+            btmClean();
+        }
+
+        function btmDivision() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "/";
+            btmClean();
+        }
+
+        function btmCarre() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "u2";
+            btmClean();
+        }
+
+        function btmCube() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "u3";
+            btmClean();
+        }
+
+        function btmLn() {
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            operateur = "ln";
+            btmClean();
+        }
+
+        // table de multiplication
+        function btmMultiple() {
+
+            chiffre1 = parseFloat(document.getElementById("calc-output").innerHTML);
+            j = chiffre1;
+
+            for (i = 0; i <= 10; i++) {
+                total = i * j;
+                document.getElementById("multiple").innerHTML += j + ' x ' + i + " = " + total + "<br/>";
+            }
+        }
+
+        // fonction qui fait les calculs quand égal appuyé
+        function btmEgal() {
+            chiffre2 = parseFloat(document.getElementById('calc-output').innerHTML);
+            switch (operateur) {
+                case ("+"):
+                    total = eval(chiffre1 + chiffre2);
+                    break;
+                case ("-"):
+                    total = eval(chiffre1 - chiffre2);
+                    break;
+                case ("*"):
+                    total = eval(chiffre1 * chiffre2);
+                    break;
+                case ("/"):
+                    total = eval(chiffre1 / chiffre2);
+                    break;
+                case ("u2"):
+                    total = Math.sqrt(chiffre1);
+                    break;
+                case ("u3"):
+                    total = Math.cbrt(chiffre1);
+                    break;
+                case ("ln"):
+                    total = Math.log(chiffre1);
+                    break;
+                    defaut: text = "erreur d'opérateur";
+            }
+            document.getElementById('calc-output').innerHTML = total;
+        }
+    </script>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <!-- zone pour le résultat -->
+            <td id="case">
+                <span id="calc-output"></span>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <!-- 1 eme ligne '1' '2' '3' 'x' 'v2' -->
+            <td>
+                <input class="number" type="button" value="1" id="button-1" onclick="btm(1)" />
+            </td>
+            <td>
+                <input class="number" type="button" value="2" id="button-2" onclick="btm(2)" />
+            </td>
+            <td>
+                <input class="number" type="button" value="3" id="button-3" onclick="btm(3)" />
+            </td>
+            <td>
+                <input class="operator" type="button" value="x" id="button-*" onclick="btmMultiply()" />
+            </td>
+            <td>
+                <input class="operator-spe" type="button" value=&#x221A; id="button-carre" onclick="btmCarre()" />
+
+            </td>
+        </tr>
+
+        <!-- 2 eme ligne '4' '5' '6' '+' 'v3' -->
+        <tr>
+            <td>
+                <input class="number" type="button" value="4" id="button-4" onclick="btm(4)" />
+            </td>
+            <td>
+                <input class="number" type="button" value="5" id="button-5" onclick="btm(5)" />
+            </td>
+            <td>
+                <input class="number" type="button" value="6" id="button-6" onclick="btm(6)" />
+            </td>
+            <td>
+                <input class="operator" type="button" value="+" id="button-+" onclick="btmPlus()" />
+            </td>
+            <td>
+                <input class="operator-spe" type="button" value=&#x221B; id="button-cube" onclick="btmCube()" />
+
+            </td>
+        </tr>
+
+        <!-- 3 eme ligne '7' '8' '9' '-' 'Ln' -->
+        <tr>
+            <td>
+                <input class="number" type="button" value="7" id="button-7" onclick="btm(7)" />
+            </td>
+            <td>
+                <input class="number" type="button" value="8" id="button-8" onclick="btm(8)" />
+            </td>
+            <td>
+                <input class="number" type="button" value="9" id="button-9" onclick="btm(9)" />
+            </td>
+            <td>
+                <input class="operator" type="button" value="-" id="button--" onclick="btmLess()" />
+            </td>
+            <td>
+                <input class="operator-spe" type="button" value="Ln" id="button-ln" onclick="btmLn()" />
+            </td>
+        </tr>
+
+        <!-- 4 eme ligne '0' '.' '=' '÷' 'C' -->
+        <tr>
+            <td>
+                <input class="number" type="button" value="0" id="button-0" onclick="btm(0)" />
+
+            </td>
+            <td>
+                <input class="number" type="button" value="." id="button-." onclick="btm('.')" />
+
+            </td>
+            <td>
+                <input class="operator" type="button" value="=" id="button-=" onclick="btmEgal()" />
+            </td>
+            <td>
+                <input class="operator" type="button" value="÷" id="button-/" onclick="btmDivision()" />
+            </td>
+            <td>
+                <input class="operator" type="button" value="C" id="button-C" onclick="btmClean()" />
+            </td>
+
+        </tr>
+
+    </table>
+    <!-- tables de multiplications -->
+    <table>
+        <tr>
+            <td>
+                <input class="operator" type="button" value="Tables Multiplications" id="nombre" onclick="btmMultiple()" />
+            </td>
+        </tr>
+        <tr>
+            <td class="enform">
+                <span id="multiple"></span>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "></script>
+</body>
+
+</html>

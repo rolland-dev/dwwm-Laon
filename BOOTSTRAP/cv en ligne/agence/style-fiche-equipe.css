@@ -1,0 +1,45 @@
+body
+{
+    width: 300px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+
+/*  mise en forme du titre du site */
+h1 {
+  text-align: center;
+  color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url("banniere-ete.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  }
+
+/* mise en forme image */
+img{
+  border-radius: 125px;
+}
+
+  /* mise en page pied de page */
+footer {
+  text-align: center;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  color: yellow;
+  padding: 5px;
+  width: auto;
+  background-image: url("banniere-ete.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  }
+  

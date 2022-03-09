@@ -1,0 +1,31 @@
+/* MISE EN FORME COMPLEMENTAIRE PAGE D'ACCUEIL 576 px */
+
+/* Mise en place du fond d'écran */
+body {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+  }
+  
+  /* fond blanc pour signaler la page actuelle */
+  .menu ul li:first-child {
+    background-color: lightcoral;
+  }
+  
+  /* mise en forme les destinations */
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav div {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    padding: 15px;
+  }
+  
+  .image {
+    display: none;
+  }
+  
