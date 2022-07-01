@@ -14,6 +14,7 @@ if(isset($_SESSION['nom'])){
 $titre = $contenu = $datepub = $dateupdate = $chapo = "";
 $titre_err = $contenu_err = $datepub_err = $dateupdate_err = $capo_err = "";
  
+var_dump($_POST);die;
 // Processing form data when form is submitted
 if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Get hidden input value
@@ -97,6 +98,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     // Retrieve individual field value
                     $titre = $row["nom"];
                     $contenu = $row["contenu"];
+                   
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
                     header("location: error.php");
@@ -152,7 +154,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                             <textarea name="contenu" class="form-control <?php echo (!empty($contenu_err)) ? 'is-invalid' : ''; ?>"><?php echo $contenu; ?></textarea>
                             <span class="invalid-feedback"><?php echo $contenu_err;?></span>
                         </div>
-                       
+                        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                         <input type="submit" class="btn btn-primary" value="Enregistrer">
                         <a href="index.php" class="btn btn-secondary ml-2">Annuler</a>
                     </form>
