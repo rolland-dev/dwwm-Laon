@@ -1,0 +1,94 @@
+1 - Ecrire un script qui affiche le texte suivant :
+
+J’apprends l’art du PHP.
+
+Sur un ordinateur il n’est pas judicieux de taper "del c:\*.*"
+
+L’information du jour est que le $PHP c’est cool. 
+
+reponse :
+
+// QQ  init
+$h = '<hr>';
+$b = '<br>';
+
+// Q1
+$str = "J'apprends l'art du PHP.".$b;
+$str .= "Sur un ordinateur il n'est pas judicieux de taper \"del c:\*.*\"".$b;
+$str .= "L'information du jour est que le \$PHP c'est cool.".$b;
+echo $str;
+
+4 – Soit un tableau $tab = array (1,1,1,2,3,5,5,5,6,7,9)
+
+Ecrire un script qui supprime les doublons et imprime le tableau résultant.
+(Recherche des fonctions sur les tableaux : Internet)
+
+// Q4
+$tab = array (1,1,1,2,3,5,5,5,6,7,9);
+
+$tab2 = array_unique($tab);
+
+foreach ($tab2 as $value) {
+    echo $value . ", "; // implode
+}
+
+ 1- Ecrire une fonction bonjour qui affiche « bonjour ».
+
+// Q1
+
+function bonjour()
+{
+    echo 'bonjour.' . B;
+}
+bonjour();
+
+ 2- Ecrire une fonction afficherNombres qui affiche les nombres de 1 à 100 en
+    les mettant 10 par ligne. 
+
+// Q2
+const H = '<hr>';
+const B = '<br>';
+
+function afficherNombres()
+{
+    for ($i = 1; $i <= 100; $i++) {
+        echo $i . (($i % 10 == 0) ? B : ' ');
+    }
+}
+afficherNombres();
+
+
+
+ 3- Ecrire une fonction somme2Entiers qui prend 2 entiers en paramètres 
+    et renvoie la somme de ses paramètres. 
+
+function somme2Entiers($int1, $int2)
+{
+    return $int1 + $int2;
+}
+echo 'La somme de 67 et 33 est : ' . somme2Entiers(67, 33);
+
+ 4- Ecrire une fonction longueurChaine qui prend une chaine en paramètre et 
+    qui renvoie la longueur de la chaine.
+
+// Q4
+
+function longueurChaine($para)
+{
+    return strlen($para);
+}
+$str = 'les ascenceurs html sont Has Been';
+echo longueurChaine($str);
+ 
+ 5- Ecrire une fonction remplaceCaractere qui prend une chaine en paramètre 
+    et qui remplace les lettres ‘e’ ou ‘E’ par un underscore et 
+    retourne la chaine en résultat.
+
+// Q5
+
+function remplaceCaractere($para)
+{
+    return str_ireplace('e', '_', $para);
+}
+$str = "les ElEphants d'asiE, d'afrique et dEs parties politiques sont en dangEr d'extinction";
+echo remplaceCaractere($str);
